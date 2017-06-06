@@ -1,0 +1,10 @@
+<cars>
+	<car>
+		<price>100</price>
+		<age>10</age>
+	</car>
+	<car>
+		<price>200</price>
+		<age>5</age>
+	</car>
+</cars>
