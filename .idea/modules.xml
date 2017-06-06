@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FuzzyDB.iml" filepath="$PROJECT_DIR$/.idea/modules/FuzzyDB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FuzzyDB_main.iml" filepath="$PROJECT_DIR$/.idea/modules/FuzzyDB_main.iml" group="FuzzyDB" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FuzzyDB_test.iml" filepath="$PROJECT_DIR$/.idea/modules/FuzzyDB_test.iml" group="FuzzyDB" />
+    </modules>
+  </component>
+</project>
