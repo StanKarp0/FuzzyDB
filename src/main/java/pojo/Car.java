@@ -29,4 +29,9 @@ public class Car {
     public void setAge(int age){
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "Price: "+price+", Age: "+age;
+    }
 }
