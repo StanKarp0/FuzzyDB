@@ -15,9 +15,9 @@
         <Label layoutX="163.0" layoutY="171.0" text="Moc" />
         <Label layoutX="163.0" layoutY="217.0" text="Silnik" />
         <Label layoutX="132.0" layoutY="294.0" text="Skrzynia biegów" />
-        <TextField layoutX="226.0" layoutY="103.0" fx:id="price"/>
-        <TextField layoutX="226.0" layoutY="139.0" fx:id="age"/>
-        <TextField layoutX="226.0" layoutY="167.0" fx:id="hp"/>
+        <TextField layoutX="226.0" layoutY="103.0" fx:id="price">10000</TextField>
+        <TextField layoutX="226.0" layoutY="139.0" fx:id="age">10</TextField>
+        <TextField layoutX="226.0" layoutY="167.0" fx:id="hp">90</TextField>
         <RadioButton layoutX="226.0" layoutY="217.0" mnemonicParsing="false" text="Benzynowy" fx:id="petrol"/>
         <RadioButton layoutX="226.0" layoutY="234.0" mnemonicParsing="false" text="Diesel" fx:id="diesel"/>
         <RadioButton layoutX="236.0" layoutY="294.0" mnemonicParsing="false" text="Automatyczna" fx:id="automatic"/>
