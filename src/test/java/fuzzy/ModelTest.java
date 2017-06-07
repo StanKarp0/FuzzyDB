@@ -34,18 +34,33 @@ public class ModelTest {
         age_adapt.addMFnc("medium", FuzzyFnc.gaussmf(0.15, 0.5));
         age_adapt.addMFnc("low", FuzzyFnc.gaussmf(0.15, 1.));
 
+        Variable hp_adapt = new Variable("hp_adapt", 0., 1.);
+        hp_adapt.addMFnc("high", FuzzyFnc.gaussmf(0.15, 0));
+        hp_adapt.addMFnc("medium", FuzzyFnc.gaussmf(0.15, 0.5));
+        hp_adapt.addMFnc("low", FuzzyFnc.gaussmf(0.15, 1.));
+
         Variable attract = new Variable("attract", 0., 1.);
         attract.addMFnc("high", FuzzyFnc.gaussmf(0.15, 0));
         attract.addMFnc("medium", FuzzyFnc.gaussmf(0.15, 0.5));
         attract.addMFnc("low", FuzzyFnc.gaussmf(0.15, 1.));
 
         Fuzzy attractFuzzy = new Fuzzy(attract);
+        //high
         attractFuzzy.addRule(price_adapt.eq("high").then("high"));
-        //attractFuzzy.addRule(price_adapt.eq("medium").and(age_adapt.eq("high")).then("high"));
+        attractFuzzy.addRule(price_adapt.eq("medium").and(age_adapt.eq("high")).then("high"));
+        attractFuzzy.addRule(price_adapt.eq("medium").and(hp_adapt.eq("high")).then("high"));
+
+        //medium
         attractFuzzy.addRule(price_adapt.eq("high").and(age_adapt.eq("low")).then("medium"));
         attractFuzzy.addRule(price_adapt.eq("medium").and(age_adapt.eq("medium")).then("medium"));
-        //attractFuzzy.addRule(price_adapt.eq("medium").and(age_adapt.eq("low")).then("low"));
+        attractFuzzy.addRule(hp_adapt.eq("medium").or(age_adapt.eq("medium")).then("medium"));
+        attractFuzzy.addRule(hp_adapt.eq("high").or(age_adapt.eq("low")).then("medium"));
+        attractFuzzy.addRule(price_adapt.eq("high").and(hp_adapt.eq("low")).then("medium"));
+
+        //low
+        attractFuzzy.addRule(price_adapt.eq("medium").and(age_adapt.eq("low")).then("low"));
         attractFuzzy.addRule(price_adapt.eq("low").then("low"));
+        attractFuzzy.addRule(hp_adapt.eq("low").then("low"));
 
         Function<Car, Model<Car, UserInput>> builder = Model.builder(attractFuzzy, (car, userInput) -> {
             Map<String, Double> result = new HashMap<>();
