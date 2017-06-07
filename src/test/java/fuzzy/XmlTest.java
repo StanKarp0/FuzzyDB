@@ -20,6 +20,9 @@ public class XmlTest {
             System.out.println("new car:");
             System.out.println("price = " + c.getPrice());
             System.out.println("age = " + c.getAge());
+            System.out.println("moc = " + c.getHp());
+            System.out.println("diesel = " + c.isDiesel());
+            System.out.println("automatyczny = " + c.isAutomatic());
         }
 
     }
@@ -31,6 +34,9 @@ public class XmlTest {
             System.out.println("\t<car>\n" +
                     "\t\t<price>"+(r.nextInt(47000)+3000)+"</price>\n" +
                     "\t\t<age>"+r.nextInt(10)+"</age>\n" +
+                    "\t\t<hp>"+(r.nextInt(200)+50)+"</hp>\n" +
+                    "\t\t<diesel>"+r.nextBoolean()+"</diesel>\n" +
+                    "\t\t<automatic>"+r.nextBoolean()+"</automatic>\n" +
                     "\t</car>");
         }
 
