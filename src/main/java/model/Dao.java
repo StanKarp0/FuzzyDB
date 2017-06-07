@@ -18,6 +18,20 @@ public class Dao {
 
     private final List<Model<Car, UserInput>> models;
 
+    private double muPriceAdapt(double x, double y) {
+        double r = Math.abs(x - y)/x;
+        if(r > 0.5) return 1.;
+        if(r < 0.1) return 0.;
+        return (r - 0.1)/0.4;
+    }
+
+    private double muAgeAdapt(double x, double y) {
+        double r = Math.abs(x - y)/x;
+        if(r > 0.5) return 1.;
+        if(r < 0.2) return 0.;
+        return (r - 0.2) / 0.3;
+    }
+
     public Dao(){
         Variable price_adapt = new Variable("price_adapt", 0., 1.);
         price_adapt.addMFnc("high", FuzzyFnc.gaussmf(0.15, 0));
@@ -44,11 +58,8 @@ public class Dao {
         Function<Car, Model<Car, UserInput>> builder = Model.builder(attractFuzzy, (car, userInput) -> {
             Map<String, Double> result = new HashMap<>();
 
-            double userPrice = userInput.getPrice();
-            double userAge = userInput.getAge();
-
-            result.put("price_adapt", Math.abs(userPrice - car.getPrice()) / userPrice);
-            result.put("age_adapt", Math.abs(userAge - car.getAge()) / userAge);
+            result.put("price_adapt", muPriceAdapt(userInput.getPrice(), car.getPrice()));
+            result.put("age_adapt", muAgeAdapt(userInput.getAge(), car.getAge()));
 
             return result;
         }, (car, input) -> car.getEngine() == input.getEngine() ? 0. : 1.);
