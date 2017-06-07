@@ -119,4 +119,39 @@ public class FuzzyTest {
         }
     }
 
+    @Test
+    public void crisp3() throws Exception {
+
+        Variable price_adapt = new Variable("price_adapt", 0., 1.);
+        price_adapt.addMFnc("high", FuzzyFnc.gaussmf(0.15, 0));
+        price_adapt.addMFnc("medium", FuzzyFnc.gaussmf(0.15, 0.5));
+        price_adapt.addMFnc("low", FuzzyFnc.gaussmf(0.15, 1.));
+
+        Variable age_adapt = new Variable("age_adapt", 0., 1.);
+        age_adapt.addMFnc("high", FuzzyFnc.gaussmf(0.15, 0));
+        age_adapt.addMFnc("medium", FuzzyFnc.gaussmf(0.15, 0.5));
+        age_adapt.addMFnc("low", FuzzyFnc.gaussmf(0.15, 1.));
+
+        Variable attract = new Variable("attract", 0., 1.);
+        attract.addMFnc("high", FuzzyFnc.gaussmf(0.15, 0));
+        attract.addMFnc("medium", FuzzyFnc.gaussmf(0.15, 0.5));
+        attract.addMFnc("low", FuzzyFnc.gaussmf(0.15, 1.));
+
+        Fuzzy attractFuzzy = new Fuzzy(attract);
+        attractFuzzy.addRule(price_adapt.eq("high").then("high"));
+        attractFuzzy.addRule(price_adapt.eq("medium").and(age_adapt.eq("high")).then("high"));
+        attractFuzzy.addRule(price_adapt.eq("medium").and(age_adapt.eq("medium")).then("medium"));
+        attractFuzzy.addRule(price_adapt.eq("medium").and(age_adapt.eq("low")).then("low"));
+        attractFuzzy.addRule(price_adapt.eq("low").then("low"));
+
+        for(double s = 0; s <= 1.01; s+= 0.02){
+            for(double f = 0.; f <= 1.01; f += 0.02) {
+                Map<String, Double> map = new HashMap<>();
+                map.put("price_adapt", s);
+                map.put("age_adapt", f);
+                System.out.println(s + " " + f + " " + attractFuzzy.crisp(map));
+            }
+        }
+    }
+
 }

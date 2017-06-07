@@ -38,7 +38,7 @@ public class Variable {
             double tempMax = 0.;
             for (Map.Entry<String, FuzzyFnc> entry : mFnc.entrySet()) {
                 if(wages.containsKey(entry.getKey())) {
-                    double value = entry.getValue().apply(x) * wages.get(entry.getKey());
+                    double value = Math.min(entry.getValue().apply(x), wages.get(entry.getKey()));
                     if (tempMax < value)
                         tempMax = value;
                 }
