@@ -9,13 +9,17 @@ public class UserInput {
 
     private final double price;
     private final double age;
-    private final Car.Engine engine;
+    private final double hp;
+    private final boolean isDiesel;
+    private final boolean isAutomatic;
 
-    public UserInput(double price, double age, Car.Engine engine) {
+    public UserInput(double price, double age, double hp, boolean isDiesel, boolean isAutomatic) {
 
         this.price = price;
         this.age = age;
-        this.engine = engine;
+        this.hp = hp;
+        this.isDiesel = isDiesel;
+        this.isAutomatic = isAutomatic;
     }
 
     public double getPrice() {
@@ -26,7 +30,9 @@ public class UserInput {
         return age;
     }
 
-    public Car.Engine getEngine() {
-        return engine;
-    }
+    public double getHp() {return hp;}
+
+    public boolean isAutomatic() {return isAutomatic;}
+
+    public boolean isDiesel() {return isDiesel;}
 }

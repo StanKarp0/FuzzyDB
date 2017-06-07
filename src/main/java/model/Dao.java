@@ -62,7 +62,12 @@ public class Dao {
             result.put("age_adapt", muAgeAdapt(userInput.getAge(), car.getAge()));
 
             return result;
-        }, (car, input) -> car.getEngine() == input.getEngine() ? 0. : 1.);
+        }, (car, input) -> {
+            double val = 0;
+            if(car.isDiesel() != input.isDiesel()) val += 0.15;//do dostosowania pozniej, bo nie wiem jakie wyniki beda wychodzily
+            if(car.isAutomatic() != input.isAutomatic()) val += 0.35;
+            return val;
+        });
 
         XmlManager manager = new XmlManager();
         List<Car> cars = manager.load("cars.xml");
