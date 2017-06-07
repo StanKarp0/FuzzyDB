@@ -16,7 +16,7 @@ public class DaoTest {
     public void find() throws Exception {
 
         Dao dao = new Dao();
-        List<Car> cars = dao.find(new UserInput(10000, 10));
+        List<Car> cars = dao.find(new UserInput(10000, 10, Car.Engine.PETROL));
         cars.forEach(System.out::println);
 
     }

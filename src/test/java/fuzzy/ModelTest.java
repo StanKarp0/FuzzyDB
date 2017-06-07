@@ -55,7 +55,7 @@ public class ModelTest {
             result.put("age_adapt", Math.abs(userAge - car.getAge()) / userAge);
 
             return result;
-        });
+        }, (car, input) -> car.getEngine() == input.getEngine() ? 0. : 1.);
 
         XmlManager manager = new XmlManager();
         List<Car> list = manager.load("cars.xml");
@@ -63,7 +63,7 @@ public class ModelTest {
         for (Car c: list)
             models.add(builder.apply(c));
 
-        UserInput input = new UserInput(20000, 5);
+        UserInput input = new UserInput(20000, 5, Car.Engine.PETROL);
         Model.sort(input, models);
 
         models.forEach(m ->

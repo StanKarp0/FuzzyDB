@@ -51,7 +51,7 @@ public class Dao {
             result.put("age_adapt", Math.abs(userAge - car.getAge()) / userAge);
 
             return result;
-        });
+        }, (car, input) -> car.getEngine() == input.getEngine() ? 0. : 1.);
 
         XmlManager manager = new XmlManager();
         List<Car> cars = manager.load("cars.xml");

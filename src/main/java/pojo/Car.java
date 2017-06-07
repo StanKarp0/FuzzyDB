@@ -11,6 +11,11 @@ public class Car {
     //do rozbudowy o kolejne zmienne w zaleznosci od potrzeb, ale to pewnie juz na koncu projektu
     private int price;
     private int age;
+    private final Engine engine;
+
+    public Car() {
+        engine = Math.random() < 0.5 ? Engine.DIESEL : Engine.PETROL;
+    }
 
     public int getPrice(){
         return price;
@@ -18,6 +23,10 @@ public class Car {
 
     public int getAge(){
         return age;
+    }
+
+    public Engine getEngine() {
+        return engine;
     }
 
     @XmlElement
@@ -32,6 +41,10 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Price: "+price+", Age: "+age;
+        return "Price: "+price+", Age: "+age + ", Engine: "+engine;
+    }
+
+    public enum Engine {
+        DIESEL, PETROL
     }
 }
