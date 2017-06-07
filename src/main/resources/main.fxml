@@ -7,20 +7,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml">
     <children>
         <Label layoutX="163.0" layoutY="107.0" text="Cena" />
         <Label layoutX="163.0" layoutY="143.0" text="Wiek" />
         <Label layoutX="163.0" layoutY="171.0" text="Moc" />
         <Label layoutX="163.0" layoutY="217.0" text="Silnik" />
         <Label layoutX="132.0" layoutY="294.0" text="Skrzynia biegów" />
-        <TextField layoutX="226.0" layoutY="103.0" />
-        <TextField layoutX="226.0" layoutY="139.0" />
-        <TextField layoutX="226.0" layoutY="167.0" />
-        <RadioButton layoutX="226.0" layoutY="217.0" mnemonicParsing="false" text="Benzynowy" />
-        <RadioButton layoutX="226.0" layoutY="234.0" mnemonicParsing="false" text="Diesel" />
-        <RadioButton layoutX="236.0" layoutY="294.0" mnemonicParsing="false" text="Automatyczna" />
-        <RadioButton layoutX="230.0" layoutY="311.0" mnemonicParsing="false" text="Manualna" />
-        <Button layoutX="241.0" layoutY="343.0" mnemonicParsing="false" text="Szukaj" />
+        <TextField layoutX="226.0" layoutY="103.0" fx:id="price"/>
+        <TextField layoutX="226.0" layoutY="139.0" fx:id="age"/>
+        <TextField layoutX="226.0" layoutY="167.0" fx:id="hp"/>
+        <RadioButton layoutX="226.0" layoutY="217.0" mnemonicParsing="false" text="Benzynowy" fx:id="petrol"/>
+        <RadioButton layoutX="226.0" layoutY="234.0" mnemonicParsing="false" text="Diesel" fx:id="diesel"/>
+        <RadioButton layoutX="236.0" layoutY="294.0" mnemonicParsing="false" text="Automatyczna" fx:id="automatic"/>
+        <RadioButton layoutX="230.0" layoutY="311.0" mnemonicParsing="false" text="Manualna" fx:id="manual"/>
+        <Button layoutX="241.0" layoutY="343.0" mnemonicParsing="false" text="Szukaj" fx:id="search" />
     </children>
 </AnchorPane>
