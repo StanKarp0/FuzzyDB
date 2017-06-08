@@ -35,7 +35,7 @@ public class Fuzzy {
         return wages;
     }
 
-    public double crisp(Map<String, Double> args) {
-        return output.defuzzification(fuzzy(args));
+    public double crisp(Map<String, Double> args, Map<String, Double> userArgs) {
+        return output.defuzzification(fuzzy(args), userArgs);
     }
 }

@@ -38,4 +38,8 @@ public class UserInput {
 
     public boolean isDiesel() {return engine == Engine.DIESEL;}
 
+    @Override
+    public String toString() {
+        return "Input: " + age;
+    }
 }

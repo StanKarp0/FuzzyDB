@@ -88,7 +88,7 @@ public class Dao {
 
             result.put("price_adapt", muPriceAdapt(userInput.getPrice(), car.getPrice()));
             result.put("age_adapt", muAgeAdapt(userInput.getAge(), car.getAge()));
-            result.put("age_adapt", muHpAdapt(userInput.getHp(), car.getHp()));
+            result.put("hp_adapt", muHpAdapt(userInput.getHp(), car.getHp()));
 
             return result;
         }, (car, input) -> {
@@ -98,6 +98,12 @@ public class Dao {
             if(input.isAutomaticSelected())
                 if(car.isAutomatic() != input.isAutomatic()) val -= 0.35;
             return val;
+        }, input -> {
+            Map<String, Double> result = new HashMap<>();
+            result.put("price_adapt", 1.);
+            result.put("age_adapt", 1.);
+            result.put("hp_adapt", 1.);
+            return result;
         });
 
         XmlManager manager = new XmlManager();

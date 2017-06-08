@@ -1,9 +1,6 @@
 package fuzzy;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
@@ -16,7 +13,10 @@ public class Model<T, U> {
     private final BiFunction<T, U, Double> fnc;
     private final BiFunction<T, U, Double> binary;
 
-    private Model(T t, BiFunction<T, U, Double> fnc, BiFunction<T, U, Double> binary) {
+    private Model(T t,
+                  BiFunction<T, U, Double> fnc,
+                  BiFunction<T, U, Double> binary
+    ) {
         this.t = t;
         this.fnc = fnc;
         this.binary = binary;
@@ -33,9 +33,12 @@ public class Model<T, U> {
     public static <T, U> Function<T, Model<T, U>> builder(
             Fuzzy output,
             BiFunction<T, U, Map<String, Double>> fnc,
-            BiFunction<T, U, Double> binary
+            BiFunction<T, U, Double> binary,
+            Function<U, Map<String, Double>> userWages
     ) {
-        return t -> new Model<>(t, fnc.andThen(output::crisp), binary);
+        return t -> new Model<>(t, (t2, u) ->
+                fnc.andThen(e ->
+                        output.crisp(e, userWages.apply(u))).apply(t2, u), binary);
     }
 
     public static <T, U> List<T> sort(U userInput, List<Model<T, U>> models) {

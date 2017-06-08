@@ -79,7 +79,7 @@ public class main extends Application {
 
             loadControls();
             loadTableView(new UserInput(10000, 10, 90, Engine.NONE, Transmission.NONE));
-            
+
         } catch (Exception e) {
             System.out.println("start" + e);
             e.printStackTrace();
