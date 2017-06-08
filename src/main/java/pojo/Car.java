@@ -16,6 +16,12 @@ public class Car {
     private boolean isDiesel;
     private boolean isAutomatic;
 
+    //wlasciwosci nie biorace udzialu w obliczeniach
+    private String name;
+    private String type;
+    private String eCapacity;
+    //end
+
     public int getPrice(){
         return price;
     }
@@ -31,6 +37,18 @@ public class Car {
     public boolean isDiesel() {return isDiesel;}
 
     public boolean isAutomatic() {return isAutomatic;}
+
+    public String getName(){
+        return name;
+    }
+
+    public String getType(){
+        return type;
+    }
+
+    public String geteCapacity(){
+        return eCapacity;
+    }
 
     @XmlElement
     public void setPrice(int price){
@@ -56,6 +74,15 @@ public class Car {
     public void setDiesel(boolean isDiesel){
         this.isDiesel = isDiesel;
     }
+
+    @XmlElement
+    public void setName(String name) {this.name = name;}
+
+    @XmlElement
+    public void setType(String type) {this.type = type;}
+
+    @XmlElement
+    public void setEcapacity(String eCapacity) {this.eCapacity = eCapacity;}
 
     @Override
     public String toString() {

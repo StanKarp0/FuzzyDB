@@ -36,20 +36,45 @@
     <TableView fx:id="tableView" GridPane.columnIndex="0"
                GridPane.rowIndex="1">
         <columns>
-            "Price: "+price+", Age: "+age+", Hp: "+hp+", isAutomatic: "+isAutomatic+", isDiesel: "+isDiesel
+           <!-- "Price: "+price+", Age: "+age+", Hp: "+hp+", isAutomatic: "+isAutomatic+", isDiesel: "+isDiesel-->
+            <TableColumn fx:id="name_col" text="Nazwa" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="type_col" text="Nadwozie" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="type" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="ecapacity_col" text="Poj. silnika" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="ecapacity" />
+                </cellValueFactory>
+            </TableColumn>
             <TableColumn fx:id="price_col" text="Cena" prefWidth="100">
                 <cellValueFactory>
                     <PropertyValueFactory property="price" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn text="Wiek" prefWidth="100">
+            <TableColumn text="Rocznik" prefWidth="100">
                 <cellValueFactory>
-                    <PropertyValueFactory property="age" />
+                    <PropertyValueFactory property="year" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn text="Moc" prefWidth="200">
+            <TableColumn text="Moc" prefWidth="60">
                 <cellValueFactory>
                     <PropertyValueFactory property="hp" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Paliwo" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="engine" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Skrzynia biegów" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="transmission" />
                 </cellValueFactory>
             </TableColumn>
         </columns>

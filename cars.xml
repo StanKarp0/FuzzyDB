@@ -1,716 +1,404 @@
 <cars>
 	<car>
-		<price>100</price>
-		<age>10</age>
-		<hp>90</hp>
-		<diesel>0</diesel>
-		<automatic>1</automatic>
-	</car>
-	<car>
-		<price>200</price>
-		<age>5</age>
-		<hp>110</hp>
-		<diesel>1</diesel>
-		<automatic>0</automatic>
-	</car>
-	<car>
-		<price>40259</price>
+		<price>10990</price>
 		<age>8</age>
-		<hp>237</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>10003</price>
-		<age>7</age>
-		<hp>130</hp>
+		<hp>97</hp>
 		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>16491</price>
-		<age>4</age>
-		<hp>206</hp>
-		<diesel>true</diesel>
 		<automatic>false</automatic>
+		<name>Marka Model12</name>
+		<type>Nadwozie1</type>
+		<ecapacity>2.3</ecapacity>
 	</car>
 	<car>
-		<price>24563</price>
-		<age>8</age>
-		<hp>224</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>11377</price>
-		<age>0</age>
-		<hp>180</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>19521</price>
-		<age>9</age>
-		<hp>70</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>25667</price>
+		<price>36416</price>
 		<age>5</age>
-		<hp>154</hp>
-		<diesel>false</diesel>
+		<hp>58</hp>
+		<diesel>true</diesel>
 		<automatic>false</automatic>
+		<name>Marka Model12</name>
+		<type>Nadwozie2</type>
+		<ecapacity>1.5</ecapacity>
 	</car>
 	<car>
-		<price>25734</price>
-		<age>9</age>
-		<hp>55</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>14598</price>
+		<price>10399</price>
 		<age>6</age>
-		<hp>116</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>39927</price>
-		<age>8</age>
-		<hp>207</hp>
+		<hp>211</hp>
 		<diesel>false</diesel>
 		<automatic>true</automatic>
+		<name>Marka Model10</name>
+		<type>Nadwozie0</type>
+		<ecapacity>2.9</ecapacity>
 	</car>
 	<car>
-		<price>21035</price>
-		<age>0</age>
-		<hp>165</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>48048</price>
-		<age>3</age>
-		<hp>223</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>28589</price>
-		<age>2</age>
-		<hp>78</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>29267</price>
+		<price>17069</price>
 		<age>4</age>
-		<hp>128</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>31145</price>
-		<age>1</age>
-		<hp>107</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>7393</price>
-		<age>0</age>
-		<hp>144</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>12268</price>
-		<age>1</age>
-		<hp>115</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>34291</price>
-		<age>9</age>
-		<hp>157</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>46474</price>
-		<age>0</age>
-		<hp>241</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>10648</price>
-		<age>8</age>
-		<hp>180</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>24761</price>
-		<age>5</age>
-		<hp>225</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>27853</price>
-		<age>4</age>
-		<hp>219</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>31760</price>
-		<age>8</age>
-		<hp>219</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>48573</price>
-		<age>5</age>
-		<hp>95</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>45258</price>
-		<age>3</age>
-		<hp>189</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>30620</price>
-		<age>8</age>
-		<hp>102</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>20196</price>
-		<age>9</age>
-		<hp>106</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>6358</price>
-		<age>5</age>
-		<hp>228</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>13052</price>
-		<age>8</age>
-		<hp>101</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>34133</price>
-		<age>1</age>
-		<hp>52</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>23793</price>
-		<age>7</age>
-		<hp>78</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>20302</price>
-		<age>0</age>
-		<hp>194</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>10622</price>
-		<age>6</age>
-		<hp>152</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>48456</price>
-		<age>0</age>
-		<hp>142</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>20457</price>
-		<age>4</age>
-		<hp>147</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>35152</price>
-		<age>7</age>
-		<hp>244</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>33875</price>
-		<age>5</age>
-		<hp>156</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>31603</price>
-		<age>4</age>
-		<hp>157</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>4049</price>
-		<age>7</age>
-		<hp>154</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>43618</price>
-		<age>1</age>
-		<hp>206</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>10835</price>
-		<age>5</age>
-		<hp>100</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>43289</price>
-		<age>1</age>
-		<hp>153</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>12236</price>
-		<age>1</age>
-		<hp>175</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>21420</price>
-		<age>7</age>
-		<hp>196</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>37557</price>
-		<age>9</age>
-		<hp>148</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>13312</price>
-		<age>0</age>
-		<hp>158</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>14526</price>
-		<age>1</age>
 		<hp>171</hp>
+		<diesel>true</diesel>
+		<automatic>true</automatic>
+		<name>Marka Model12</name>
+		<type>Nadwozie3</type>
+		<ecapacity>2.0</ecapacity>
+	</car>
+	<car>
+		<price>7754</price>
+		<age>5</age>
+		<hp>105</hp>
+		<diesel>true</diesel>
+		<automatic>false</automatic>
+		<name>Marka Model16</name>
+		<type>Nadwozie1</type>
+		<ecapacity>1.5</ecapacity>
+	</car>
+	<car>
+		<price>10508</price>
+		<age>4</age>
+		<hp>161</hp>
 		<diesel>false</diesel>
 		<automatic>true</automatic>
+		<name>Marka Model4</name>
+		<type>Nadwozie1</type>
+		<ecapacity>3.0</ecapacity>
 	</car>
 	<car>
-		<price>49393</price>
-		<age>0</age>
-		<hp>53</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>8451</price>
-		<age>2</age>
-		<hp>154</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>38385</price>
-		<age>5</age>
-		<hp>240</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>12959</price>
+		<price>26367</price>
 		<age>9</age>
-		<hp>181</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>13845</price>
-		<age>1</age>
-		<hp>62</hp>
+		<hp>159</hp>
 		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>18106</price>
-		<age>6</age>
-		<hp>146</hp>
-		<diesel>true</diesel>
 		<automatic>false</automatic>
+		<name>Marka Model6</name>
+		<type>Nadwozie3</type>
+		<ecapacity>0.9</ecapacity>
 	</car>
 	<car>
-		<price>13665</price>
-		<age>5</age>
+		<price>6621</price>
+		<age>3</age>
+		<hp>241</hp>
+		<diesel>true</diesel>
+		<automatic>true</automatic>
+		<name>Marka Model8</name>
+		<type>Nadwozie2</type>
+		<ecapacity>1.2</ecapacity>
+	</car>
+	<car>
+		<price>37360</price>
+		<age>6</age>
+		<hp>232</hp>
+		<diesel>true</diesel>
+		<automatic>true</automatic>
+		<name>Marka Model9</name>
+		<type>Nadwozie1</type>
+		<ecapacity>2.4</ecapacity>
+	</car>
+	<car>
+		<price>46402</price>
+		<age>7</age>
 		<hp>111</hp>
 		<diesel>true</diesel>
 		<automatic>true</automatic>
+		<name>Marka Model7</name>
+		<type>Nadwozie0</type>
+		<ecapacity>1.6</ecapacity>
 	</car>
 	<car>
-		<price>30889</price>
-		<age>1</age>
-		<hp>193</hp>
+		<price>5283</price>
+		<age>2</age>
+		<hp>226</hp>
+		<diesel>true</diesel>
+		<automatic>true</automatic>
+		<name>Marka Model19</name>
+		<type>Nadwozie0</type>
+		<ecapacity>2.2</ecapacity>
+	</car>
+	<car>
+		<price>23354</price>
+		<age>0</age>
+		<hp>200</hp>
+		<diesel>true</diesel>
+		<automatic>false</automatic>
+		<name>Marka Model0</name>
+		<type>Nadwozie1</type>
+		<ecapacity>3.3</ecapacity>
+	</car>
+	<car>
+		<price>15722</price>
+		<age>2</age>
+		<hp>249</hp>
 		<diesel>false</diesel>
 		<automatic>false</automatic>
+		<name>Marka Model17</name>
+		<type>Nadwozie1</type>
+		<ecapacity>2.8</ecapacity>
 	</car>
 	<car>
-		<price>22150</price>
+		<price>26287</price>
 		<age>9</age>
-		<hp>58</hp>
+		<hp>185</hp>
 		<diesel>false</diesel>
 		<automatic>false</automatic>
+		<name>Marka Model5</name>
+		<type>Nadwozie3</type>
+		<ecapacity>3.3</ecapacity>
 	</car>
 	<car>
-		<price>4747</price>
-		<age>9</age>
-		<hp>157</hp>
-		<diesel>false</diesel>
+		<price>12886</price>
+		<age>8</age>
+		<hp>50</hp>
+		<diesel>true</diesel>
 		<automatic>false</automatic>
+		<name>Marka Model19</name>
+		<type>Nadwozie1</type>
+		<ecapacity>3.6</ecapacity>
 	</car>
 	<car>
-		<price>36764</price>
-		<age>5</age>
-		<hp>180</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>18848</price>
-		<age>3</age>
-		<hp>173</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>7246</price>
-		<age>3</age>
+		<price>4200</price>
+		<age>4</age>
 		<hp>189</hp>
 		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>31403</price>
-		<age>7</age>
-		<hp>87</hp>
-		<diesel>false</diesel>
 		<automatic>true</automatic>
+		<name>Marka Model17</name>
+		<type>Nadwozie2</type>
+		<ecapacity>1.1</ecapacity>
 	</car>
 	<car>
-		<price>19450</price>
-		<age>3</age>
-		<hp>73</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>4380</price>
-		<age>7</age>
-		<hp>203</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>8292</price>
-		<age>8</age>
-		<hp>209</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>23075</price>
-		<age>1</age>
-		<hp>244</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>6227</price>
+		<price>42342</price>
 		<age>4</age>
-		<hp>151</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>43694</price>
-		<age>2</age>
-		<hp>160</hp>
+		<hp>105</hp>
 		<diesel>false</diesel>
 		<automatic>true</automatic>
+		<name>Marka Model3</name>
+		<type>Nadwozie2</type>
+		<ecapacity>2.3</ecapacity>
 	</car>
 	<car>
-		<price>6939</price>
-		<age>6</age>
-		<hp>144</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>12956</price>
-		<age>8</age>
-		<hp>118</hp>
-		<diesel>true</diesel>
+		<price>10566</price>
+		<age>0</age>
+		<hp>154</hp>
+		<diesel>false</diesel>
 		<automatic>true</automatic>
+		<name>Marka Model7</name>
+		<type>Nadwozie2</type>
+		<ecapacity>1.3</ecapacity>
 	</car>
 	<car>
-		<price>47085</price>
+		<price>36740</price>
 		<age>3</age>
-		<hp>241</hp>
-		<diesel>false</diesel>
+		<hp>123</hp>
+		<diesel>true</diesel>
 		<automatic>false</automatic>
+		<name>Marka Model11</name>
+		<type>Nadwozie2</type>
+		<ecapacity>3.7</ecapacity>
 	</car>
 	<car>
-		<price>8853</price>
-		<age>1</age>
-		<hp>136</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>24267</price>
+		<price>34441</price>
 		<age>7</age>
-		<hp>224</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>16467</price>
-		<age>2</age>
-		<hp>182</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>42710</price>
-		<age>9</age>
-		<hp>231</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>39444</price>
-		<age>5</age>
-		<hp>107</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>5213</price>
-		<age>3</age>
-		<hp>230</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>39452</price>
-		<age>5</age>
-		<hp>124</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>29755</price>
-		<age>0</age>
-		<hp>198</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>28330</price>
-		<age>8</age>
-		<hp>104</hp>
+		<hp>148</hp>
 		<diesel>true</diesel>
 		<automatic>false</automatic>
+		<name>Marka Model8</name>
+		<type>Nadwozie2</type>
+		<ecapacity>3.5</ecapacity>
 	</car>
 	<car>
-		<price>16067</price>
-		<age>0</age>
-		<hp>170</hp>
+		<price>45616</price>
+		<age>5</age>
+		<hp>236</hp>
 		<diesel>false</diesel>
-		<automatic>false</automatic>
+		<automatic>true</automatic>
+		<name>Marka Model19</name>
+		<type>Nadwozie1</type>
+		<ecapacity>2.6</ecapacity>
 	</car>
 	<car>
-		<price>10614</price>
+		<price>31235</price>
+		<age>0</age>
+		<hp>79</hp>
+		<diesel>false</diesel>
+		<automatic>true</automatic>
+		<name>Marka Model8</name>
+		<type>Nadwozie2</type>
+		<ecapacity>1.1</ecapacity>
+	</car>
+	<car>
+		<price>35178</price>
 		<age>4</age>
-		<hp>172</hp>
+		<hp>112</hp>
 		<diesel>true</diesel>
 		<automatic>true</automatic>
+		<name>Marka Model12</name>
+		<type>Nadwozie1</type>
+		<ecapacity>0.8</ecapacity>
 	</car>
 	<car>
-		<price>32295</price>
-		<age>7</age>
-		<hp>140</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>10020</price>
-		<age>6</age>
-		<hp>60</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>30724</price>
-		<age>3</age>
-		<hp>185</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>5363</price>
+		<price>27211</price>
 		<age>8</age>
-		<hp>175</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>12191</price>
-		<age>3</age>
 		<hp>80</hp>
 		<diesel>true</diesel>
 		<automatic>false</automatic>
+		<name>Marka Model8</name>
+		<type>Nadwozie2</type>
+		<ecapacity>1.2</ecapacity>
 	</car>
 	<car>
-		<price>10522</price>
-		<age>1</age>
-		<hp>215</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>8405</price>
+		<price>4642</price>
 		<age>2</age>
-		<hp>65</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>13906</price>
-		<age>4</age>
-		<hp>58</hp>
+		<hp>229</hp>
 		<diesel>false</diesel>
 		<automatic>true</automatic>
+		<name>Marka Model1</name>
+		<type>Nadwozie0</type>
+		<ecapacity>3.2</ecapacity>
 	</car>
 	<car>
-		<price>22371</price>
-		<age>9</age>
-		<hp>142</hp>
+		<price>43915</price>
+		<age>4</age>
+		<hp>171</hp>
+		<diesel>false</diesel>
+		<automatic>true</automatic>
+		<name>Marka Model4</name>
+		<type>Nadwozie3</type>
+		<ecapacity>3.5</ecapacity>
+	</car>
+	<car>
+		<price>21426</price>
+		<age>2</age>
+		<hp>102</hp>
+		<diesel>false</diesel>
+		<automatic>false</automatic>
+		<name>Marka Model5</name>
+		<type>Nadwozie2</type>
+		<ecapacity>3.3</ecapacity>
+	</car>
+	<car>
+		<price>13050</price>
+		<age>0</age>
+		<hp>149</hp>
 		<diesel>true</diesel>
 		<automatic>true</automatic>
+		<name>Marka Model5</name>
+		<type>Nadwozie1</type>
+		<ecapacity>3.3</ecapacity>
 	</car>
 	<car>
-		<price>34501</price>
-		<age>0</age>
+		<price>8594</price>
+		<age>5</age>
+		<hp>120</hp>
+		<diesel>false</diesel>
+		<automatic>false</automatic>
+		<name>Marka Model18</name>
+		<type>Nadwozie1</type>
+		<ecapacity>3.3</ecapacity>
+	</car>
+	<car>
+		<price>44024</price>
+		<age>9</age>
+		<hp>51</hp>
+		<diesel>false</diesel>
+		<automatic>true</automatic>
+		<name>Marka Model7</name>
+		<type>Nadwozie2</type>
+		<ecapacity>2.3</ecapacity>
+	</car>
+	<car>
+		<price>22210</price>
+		<age>4</age>
+		<hp>128</hp>
+		<diesel>true</diesel>
+		<automatic>true</automatic>
+		<name>Marka Model18</name>
+		<type>Nadwozie1</type>
+		<ecapacity>2.5</ecapacity>
+	</car>
+	<car>
+		<price>7616</price>
+		<age>3</age>
+		<hp>216</hp>
+		<diesel>true</diesel>
+		<automatic>true</automatic>
+		<name>Marka Model7</name>
+		<type>Nadwozie0</type>
+		<ecapacity>0.9</ecapacity>
+	</car>
+	<car>
+		<price>39003</price>
+		<age>7</age>
+		<hp>90</hp>
+		<diesel>true</diesel>
+		<automatic>true</automatic>
+		<name>Marka Model0</name>
+		<type>Nadwozie2</type>
+		<ecapacity>2.3</ecapacity>
+	</car>
+	<car>
+		<price>46321</price>
+		<age>2</age>
+		<hp>50</hp>
+		<diesel>true</diesel>
+		<automatic>true</automatic>
+		<name>Marka Model17</name>
+		<type>Nadwozie1</type>
+		<ecapacity>1.8</ecapacity>
+	</car>
+	<car>
+		<price>45406</price>
+		<age>2</age>
+		<hp>115</hp>
+		<diesel>false</diesel>
+		<automatic>false</automatic>
+		<name>Marka Model19</name>
+		<type>Nadwozie1</type>
+		<ecapacity>2.9</ecapacity>
+	</car>
+	<car>
+		<price>20859</price>
+		<age>4</age>
+		<hp>149</hp>
+		<diesel>false</diesel>
+		<automatic>true</automatic>
+		<name>Marka Model2</name>
+		<type>Nadwozie0</type>
+		<ecapacity>2.6</ecapacity>
+	</car>
+	<car>
+		<price>33482</price>
+		<age>5</age>
+		<hp>151</hp>
+		<diesel>true</diesel>
+		<automatic>true</automatic>
+		<name>Marka Model17</name>
+		<type>Nadwozie0</type>
+		<ecapacity>3.1</ecapacity>
+	</car>
+	<car>
+		<price>7799</price>
+		<age>8</age>
+		<hp>213</hp>
+		<diesel>true</diesel>
+		<automatic>true</automatic>
+		<name>Marka Model18</name>
+		<type>Nadwozie0</type>
+		<ecapacity>2.5</ecapacity>
+	</car>
+	<car>
+		<price>9056</price>
+		<age>8</age>
 		<hp>83</hp>
 		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>18259</price>
-		<age>8</age>
-		<hp>77</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>39746</price>
-		<age>4</age>
-		<hp>135</hp>
-		<diesel>true</diesel>
 		<automatic>false</automatic>
+		<name>Marka Model8</name>
+		<type>Nadwozie1</type>
+		<ecapacity>3.4</ecapacity>
 	</car>
 	<car>
-		<price>34504</price>
-		<age>5</age>
-		<hp>209</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>35042</price>
-		<age>7</age>
-		<hp>186</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>33015</price>
-		<age>8</age>
-		<hp>177</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>33773</price>
-		<age>3</age>
-		<hp>118</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-	</car>
-	<car>
-		<price>4465</price>
-		<age>3</age>
-		<hp>154</hp>
+		<price>32238</price>
+		<age>2</age>
+		<hp>95</hp>
 		<diesel>true</diesel>
 		<automatic>true</automatic>
+		<name>Marka Model15</name>
+		<type>Nadwozie1</type>
+		<ecapacity>2.3</ecapacity>
 	</car>
-	<car>
-		<price>40021</price>
-		<age>1</age>
-		<hp>82</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-	</car>
-	<car>
-		<price>4345</price>
-		<age>8</age>
-		<hp>104</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-	</car>
+
+
 </cars>

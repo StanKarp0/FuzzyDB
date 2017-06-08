@@ -4,15 +4,14 @@ import controller.Engine;
 import controller.Transmission;
 import controller.UserInput;
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import model.Dao;
@@ -51,7 +50,11 @@ public class main extends Application {
     @FXML
     private RadioButton automatic;
 
+    @FXML
+    private TableView tableView;
+
     private final Dao dao;
+    private CarView carView;
 
     public main() {
         this.dao = new Dao();
@@ -70,7 +73,7 @@ public class main extends Application {
             fxmlLoader.setController(this);
             Parent root = fxmlLoader.load();
 
-            stage.setScene(new Scene(root, 800, 600));
+            stage.setScene(new Scene(root, 1000, 600));
 
             stage.show();
 
@@ -129,6 +132,15 @@ public class main extends Application {
                 List<Car> cars = dao.find(input);
                 cars.forEach(System.out::println);
 
+                List<CarView> carViewList = new ArrayList<>();
+                for(Car c: cars){
+                    carViewList.add(new CarView(c));
+                }
+
+
+
+                ObservableList<CarView> list = FXCollections.observableArrayList(carViewList);
+                tableView.setItems(list);
 
             }
         });

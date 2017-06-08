@@ -1,5 +1,7 @@
 package model;
 
+import controller.Engine;
+import controller.Transmission;
 import controller.UserInput;
 import org.junit.Test;
 import pojo.Car;
@@ -16,7 +18,7 @@ public class DaoTest {
     public void find() throws Exception {
 
         Dao dao = new Dao();
-        List<Car> cars = dao.find(new UserInput(20000, 5, 90, false, false));
+        List<Car> cars = dao.find(new UserInput(20000, 5, 90, Engine.DIESEL, Transmission.AUTOMATIC));
         cars.forEach(System.out::println);
 
     }
