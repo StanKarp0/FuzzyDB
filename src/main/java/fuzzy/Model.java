@@ -33,12 +33,10 @@ public class Model<T, U> {
     public static <T, U> Function<T, Model<T, U>> builder(
             Fuzzy output,
             BiFunction<T, U, Map<String, Double>> fnc,
-            BiFunction<T, U, Double> binary,
-            Function<U, Map<String, Double>> userWages
+            BiFunction<T, U, Double> binary
     ) {
         return t -> new Model<>(t, (t2, u) ->
-                fnc.andThen(e ->
-                        output.crisp(e, userWages.apply(u))).apply(t2, u), binary);
+                fnc.andThen(output::crisp).apply(t2, u), binary);
     }
 
     public static <T, U> List<T> sort(U userInput, List<Model<T, U>> models) {

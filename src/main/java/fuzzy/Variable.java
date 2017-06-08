@@ -33,12 +33,13 @@ public class Variable {
         mFnc.put(value, fnc);
     }
 
-    double defuzzification(Map<String, Double> wages, Map<String, Double> userWages) {
+    double defuzzification(Map<String, Double> wages) {
         Function<Double, Double> getMax = (Double x) -> {
             double tempMax = 0.;
             for (Map.Entry<String, FuzzyFnc> entry : mFnc.entrySet()) {
-                if(wages.containsKey(entry.getKey()) && userWages.containsKey(entry.getKey())) {
-                    double value = Math.min(entry.getValue().apply(x), wages.get(entry.getKey())) * userWages.get(entry.getKey());
+                if(wages.containsKey(entry.getKey())) {
+
+                    double value = Math.min(entry.getValue().apply(x), wages.get(entry.getKey()));
                     if (tempMax < value)
                         tempMax = value;
                 }
