@@ -52,7 +52,7 @@ public class Dao {
 
         Variable age_adapt = new Variable("age_adapt", 0., 1.);
         age_adapt.addMFnc("low", FuzzyFnc.trapmf(-1, -0.5, 0.1, 0.35));
-        age_adapt.addMFnc("medium", FuzzyFnc.trapmf(0.3, 0.5, 0.6, 0.7));
+        age_adapt.addMFnc("medium", FuzzyFnc.trapmf(0.2, 0.4, 0.5, 0.6));
         age_adapt.addMFnc("high", FuzzyFnc.trapmf(0.5, 0.7, 2, 3));
 
         Variable hp_adapt = new Variable("hp_adapt", 0., 1.);
@@ -77,7 +77,7 @@ public class Dao {
         attractFuzzy.addRule(price_adapt.eq("high").and(age_adapt.eq("low")).then("medium"));
         attractFuzzy.addRule(price_adapt.eq("medium").and(age_adapt.eq("medium")).and(hp_adapt.eq("medium")).then("medium"));
         attractFuzzy.addRule(hp_adapt.eq("medium").and(age_adapt.eq("medium")).then("medium"));
-        //attractFuzzy.addRule(hp_adapt.eq("high").or(age_adapt.eq("high")).then("medium"));
+        attractFuzzy.addRule(hp_adapt.eq("high").or(age_adapt.eq("high")).then("medium"));
         attractFuzzy.addRule(price_adapt.eq("high").and(hp_adapt.eq("low")).then("medium"));
 
         //low
