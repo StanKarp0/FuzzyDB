@@ -21,25 +21,25 @@ public class Dao {
     private double muPriceAdapt(double x, double y) {
         double r = Math.abs(x - y)/x;
         if(x < y)
-            if(r < 0.1) return (0.1 - 0.5 * r) / 0.1;
-            else if(r < 0.15) return (0.075 - 0.5 * r) / 0.05;
+            if(r < 0.5) return (0.5 - 0.5 * r) / 0.5;
+            else if(r < 0.9) return (0.45 - 0.5 * r) / 0.4;
             else return 0;
         else
             if (r < 0.15) return 1;
-            else if (r < 0.3) return (0.3 - r)/0.15;
+            else if (r < 0.9) return (0.9 - r)/0.75;
             else return 0;
     }
 
     private double muAgeAdapt(double x, double y) {
         double r = Math.abs(x - y)/x;
-        if(x < y) return r < 0.25 ? (0.25 - r)/0.25 : 0.;
-        else return r < 0.4 ? (0.4 - r)/0.4 : 0.;
+        if(x < y) return r < 0.9 ? (0.9 - r)/0.9 : 0.;
+        else return r < 0.8 ? (0.8 - r)/0.8 : 0.;
     }
 
     private double muHpAdapt(double x, double y) {
         double r = Math.abs(x - y)/x;
         if(r < 0.05) return 1.;
-        if(r < 0.25) return (0.25 - r) / 0.20;
+        if(r < 1.) return (1. - r) / 0.95;
         return 0.;
     }
 
