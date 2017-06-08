@@ -67,8 +67,8 @@ public class Dao {
 
         Fuzzy attractFuzzy = new Fuzzy(attract);
         //high
-        //attractFuzzy.addRule(price_adapt.eq("high").then("high"));
         attractFuzzy.addRule(price_adapt.eq("high").and(age_adapt.eq("high")).then("high"));
+        attractFuzzy.addRule(price_adapt.eq("high").and(hp_adapt.eq("medium")).and(age_adapt.eq("medium")).then("high"));
         attractFuzzy.addRule(price_adapt.eq("high").and(hp_adapt.eq("high")).and(age_adapt.eq("medium")).then("high"));
         attractFuzzy.addRule(price_adapt.eq("high").and(hp_adapt.eq("medium")).and(age_adapt.eq("high")).then("high"));
         attractFuzzy.addRule(price_adapt.eq("medium").and(hp_adapt.eq("high")).and(age_adapt.eq("high")).then("high"));
@@ -77,15 +77,18 @@ public class Dao {
         attractFuzzy.addRule(price_adapt.eq("high").and(age_adapt.eq("low")).then("medium"));
         attractFuzzy.addRule(price_adapt.eq("medium").and(age_adapt.eq("medium")).and(hp_adapt.eq("medium")).then("medium"));
         attractFuzzy.addRule(hp_adapt.eq("medium").and(age_adapt.eq("medium")).then("medium"));
-        attractFuzzy.addRule(hp_adapt.eq("high").or(age_adapt.eq("high")).then("medium"));
         attractFuzzy.addRule(price_adapt.eq("high").and(hp_adapt.eq("low")).then("medium"));
         attractFuzzy.addRule(price_adapt.eq("medium").and(age_adapt.eq("medium")).then("medium"));
         attractFuzzy.addRule(price_adapt.eq("medium").and(hp_adapt.eq("medium")).then("medium"));
+        attractFuzzy.addRule(age_adapt.eq("low").and(hp_adapt.eq("high")).then("medium"));
+        attractFuzzy.addRule(age_adapt.eq("high").and(hp_adapt.eq("low")).then("medium"));
 
         //low
         attractFuzzy.addRule(price_adapt.eq("medium").and(age_adapt.eq("low")).then("low"));
         attractFuzzy.addRule(price_adapt.eq("medium").and(hp_adapt.eq("low")).and(age_adapt.eq("low")).then("low"));
         attractFuzzy.addRule(price_adapt.eq("low").then("low"));
+        attractFuzzy.addRule(price_adapt.eq("low").and(hp_adapt.eq("low")).then("low"));
+        attractFuzzy.addRule(price_adapt.eq("low").and(age_adapt.eq("low")).then("low"));
         attractFuzzy.addRule(hp_adapt.eq("low").and(age_adapt.eq("low")).then("low"));
 
 
