@@ -48,10 +48,16 @@ public class main extends Application {
     private RadioButton diesel;
 
     @FXML
+    private RadioButton engine;
+
+    @FXML
     private RadioButton manual;
 
     @FXML
     private RadioButton automatic;
+
+    @FXML
+    private RadioButton transmission;
 
     @FXML
     private ChoiceBox<String> type;
@@ -97,10 +103,15 @@ public class main extends Application {
         ToggleGroup group = new ToggleGroup();
         petrol.setToggleGroup(group);
         diesel.setToggleGroup(group);
+        engine.setToggleGroup(group);
+        engine.setSelected(true);
         ToggleGroup group2 = new ToggleGroup();
         automatic.setToggleGroup(group2);
         manual.setToggleGroup(group2);
+        transmission.setToggleGroup(group2);
+        transmission.setSelected(true);
         type.setItems(FXCollections.observableArrayList(Car.ALL_TYPES, "hatchback", "sedan", "kombi", "suv", "coupe", "minivan", "pick-up", "kabriolet", "terenowy"));
+        type.getSelectionModel().selectFirst();
         search.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
