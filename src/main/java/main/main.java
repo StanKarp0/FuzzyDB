@@ -1,5 +1,8 @@
 package main;
 
+import controller.Engine;
+import controller.Transmission;
+import controller.UserInput;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -12,6 +15,10 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import model.Dao;
+import pojo.Car;
+
+import java.util.List;
 
 /**
  * Created by wojciech on 06.06.17.
@@ -42,6 +49,12 @@ public class main extends Application {
     @FXML
     private RadioButton automatic;
 
+    private final Dao dao;
+
+    public main() {
+        this.dao = new Dao();
+    }
+
     public static void main(String[] args) {
         launch(args);
     }
@@ -58,7 +71,7 @@ public class main extends Application {
             stage.setScene(new Scene(root, 800, 600));
 
             stage.show();
-            System.out.println(price);
+
             loadControls();
         } catch (Exception e) {
             System.out.println("start" + e);
@@ -78,22 +91,19 @@ public class main extends Application {
             @Override
             public void handle(MouseEvent event) {
                 //ZMIENNE:
-                int isDiesel;
+                Engine engine = Engine.NONE;
                 if(diesel.isSelected()){
-                    isDiesel = 1;
+                    engine = Engine.DIESEL;
                 } else if(petrol.isSelected()){
-                    isDiesel = 0;
-                }else{
-                    isDiesel = -1;
+                    engine = Engine.PETROL;
                 }
-                int isAutomatic;
+                Transmission transmission = Transmission.NONE;
                 if(automatic.isSelected()){
-                    isAutomatic = 1;
-                } else if(automatic.isSelected()){
-                    isAutomatic = 0;
-                }else{
-                    isAutomatic = -1;
+                    transmission = Transmission.AUTOMATIC;
+                } else if(manual.isSelected()){
+                    transmission = Transmission.MANUAL;
                 }
+
                 int selectedPrice;
                 try {
                     selectedPrice = Integer.valueOf(price.getText());
@@ -112,9 +122,10 @@ public class main extends Application {
                 }catch(NumberFormatException e){
                     selectedHp = -1;
                 }
-                System.out.println("wcisnieto" + selectedPrice + ", " + selectedAge + " , " + selectedHp + " , " + isDiesel + " , " + isAutomatic);
-                //TODO
-                //TUTAJ INICJALIZACJA WYSZUKIWANIA ROZMYTEGO ORAZ TUTAJ BEDZIE WYWOLANA FUNKCJA WYPISUJACA WYNIK
+
+                UserInput input = new UserInput(selectedPrice, selectedAge, selectedHp, engine, transmission);
+                List<Car> cars = dao.find(input);
+                cars.forEach(System.out::println);
             }
         });
     }

@@ -1,5 +1,7 @@
 package fuzzy;
 
+import controller.Engine;
+import controller.Transmission;
 import controller.UserInput;
 import model.CHelper;
 import org.junit.Test;
@@ -167,7 +169,7 @@ public class ModelTest {
         for (Car c: list)
             models.add(builder.apply(c));
 
-        UserInput input = new UserInput(32000, 8, 90, false, false);
+        UserInput input = new UserInput(32000, 8, 90, Engine.PETROL, Transmission.NONE);
         Model.sort(input, models);
 
         models.forEach(m ->

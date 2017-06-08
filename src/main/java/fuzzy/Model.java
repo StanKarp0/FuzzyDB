@@ -1,5 +1,6 @@
 package fuzzy;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -37,8 +38,34 @@ public class Model<T, U> {
         return t -> new Model<>(t, fnc.andThen(output::crisp), binary);
     }
 
-    public static <T, U> void sort(U userInput, List<Model<T, U>> models) {
-        models.sort(Comparator.comparingDouble(model -> model.getResult(userInput)));
+    public static <T, U> List<T> sort(U userInput, List<Model<T, U>> models) {
+        class Pair {
+            private final T t;
+            private final double d;
+
+            Pair(T t, double d) {
+                this.t = t;
+                this.d = d;
+            }
+            T getT() {
+                return t;
+            }
+            double getD() {
+                return d;
+            }
+        }
+
+        List<Pair> pairs = new ArrayList<>();
+        for(Model<T, U> m: models)
+            pairs.add(new Pair(m.get(), m.getResult(userInput)));
+        pairs.sort(Comparator.comparingDouble(Pair::getD));
+        List<T> result = new ArrayList<>();
+        for(Pair p: pairs)
+            result.add(p.getT());
+        return result;
+//        models.sort(Comparator.comparingDouble(model -> model.getResult(userInput)));
     }
+
+
 
 }

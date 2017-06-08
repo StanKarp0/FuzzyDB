@@ -64,8 +64,10 @@ public class Dao {
             return result;
         }, (car, input) -> {
             double val = 0;
-            if(car.isDiesel() != input.isDiesel()) val += 0.15;//do dostosowania pozniej, bo nie wiem jakie wyniki beda wychodzily
-            if(car.isAutomatic() != input.isAutomatic()) val += 0.35;
+            if(input.isDieselSelected())
+                if(car.isDiesel() != input.isDiesel()) val += 0.15;//do dostosowania pozniej, bo nie wiem jakie wyniki beda wychodzily
+            if(input.isAutomaticSelected())
+                if(car.isAutomatic() != input.isAutomatic()) val += 0.35;
             return val;
         });
 
@@ -78,11 +80,7 @@ public class Dao {
     }
 
     public List<Car> find(UserInput input) {
-        List<Car> result = new ArrayList<>();
-        Model.sort(input, models);
-        for(Model<Car, UserInput> m: models)
-            result.add(m.get());
-        return result;
+        return Model.sort(input, models);
     }
 
 }

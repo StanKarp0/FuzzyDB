@@ -13,13 +13,8 @@ public class Car {
     private int age;
     private int hp;
 
-    private final Engine engine;
     private boolean isDiesel;
     private boolean isAutomatic;
-
-    public Car() {
-        engine = Math.random() < 2 ? Engine.DIESEL : Engine.PETROL;
-    }
 
     public int getPrice(){
         return price;
@@ -36,10 +31,6 @@ public class Car {
     public boolean isDiesel() {return isDiesel;}
 
     public boolean isAutomatic() {return isAutomatic;}
-
-    public Engine getEngine() {
-        return engine;
-    }
 
     @XmlElement
     public void setPrice(int price){
@@ -68,10 +59,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Price: "+price+", Age: "+age + ", Engine: "+engine;
+        return "Price: "+price+", Age: "+age+", Hp: "+hp+", isAutomatic: "+isAutomatic+", isDiesel: "+isDiesel;
     }
 
-    public enum Engine {
-        DIESEL, PETROL
-    }
 }
