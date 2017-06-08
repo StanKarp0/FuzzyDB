@@ -601,4 +601,695 @@
 		<type>kombi</type>
 		<ecapacity>1.6</ecapacity>
 	</car>
+
+	<car>
+		<price>12500</price>
+		<age>1993</age>
+		<hp>231</hp>
+		<mileage>393</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Mercedes S W140</name>
+		<type>sedan</type>
+		<ecapacity>3.2</ecapacity>
+	</car>
+
+	<car>
+		<price>38000</price>
+		<age>1992</age>
+		<hp>24</hp>
+		<mileage>61</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Fiat 126p BOSMAL cabrio</name>
+		<type>kabriolet</type>
+		<ecapacity>0.65</ecapacity>
+	</car>
+
+	<car>
+		<price>2000</price>
+		<age>1991</age>
+		<hp>29</hp>
+		<mileage>36</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Trabant</name>
+		<type>kombi</type>
+		<ecapacity>1.1</ecapacity>
+	</car>
+
+	<car>
+		<price>59000</price>
+		<age>2003</age>
+		<hp>450</hp>
+		<mileage>191</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Audi RS6 C5</name>
+		<type>kombi</type>
+		<ecapacity>4.2</ecapacity>
+	</car>
+	<car>
+		<price>63000</price>
+		<age>2014</age>
+		<hp>150</hp>
+		<mileage>52</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>BMW X1 E84</name>
+		<type>suv</type>
+		<ecapacity>2.0</ecapacity>
+	</car>
+	<car>
+		<price>42000</price>
+		<age>2010</age>
+		<hp>135</hp>
+		<mileage>174</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Kia Sportage III</name>
+		<type>suv</type>
+		<ecapacity>1.6</ecapacity>
+	</car>
+	<car>
+		<price>7000</price>
+		<age>1987</age>
+		<hp>70</hp>
+		<mileage>250</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>VW Golf I cabrio</name>
+		<type>kabriolet</type>
+		<ecapacity>1.8</ecapacity>
+	</car>
+	<car>
+		<price>12000</price>
+		<age>1990</age>
+		<hp>136</hp>
+		<mileage>160</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Mercedes W124 coupe</name>
+		<type>coupe</type>
+		<ecapacity>2.3</ecapacity>
+	</car>
+	<car>
+		<price>89000</price>
+		<age>2009</age>
+		<hp>423</hp>
+		<mileage>230</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Lexus IS F II</name>
+		<type>sedan</type>
+		<ecapacity>5.0</ecapacity>
+	</car>
+	<car>
+		<price>21000</price>
+		<age>2013</age>
+		<hp>90</hp>
+		<mileage>65</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Renault Clio IV</name>
+		<type>hatchback</type>
+		<ecapacity>1.5</ecapacity>
+	</car>
+	<car>
+		<price>59000</price>
+		<age>1978</age>
+		<hp>145</hp>
+		<mileage>122</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Pontiac Firebird</name>
+		<type>coupe</type>
+		<ecapacity>5.0</ecapacity>
+	</car>
+	<car>
+		<price>78000</price>
+		<age>2011</age>
+		<hp>286</hp>
+		<mileage>108</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Jeep Grand Cherokee IV</name>
+		<type>suv</type>
+		<ecapacity>3.6</ecapacity>
+	</car>
+	<car>
+		<price>2000</price>
+		<age>1978</age>
+		<hp>75</hp>
+		<mileage>300</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Mercedes W123</name>
+		<type>sedan</type>
+		<ecapacity>3.0</ecapacity>
+	</car>
+	<car>
+		<price>19000</price>
+		<age>1984</age>
+		<hp>90</hp>
+		<mileage>54</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Opel Ascona</name>
+		<type>hatchback</type>
+		<ecapacity>1.6</ecapacity>
+	</car>
+
+
+	<car>
+		<price>23000</price>
+		<age>2007</age>
+		<hp>180</hp>
+		<mileage>173</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Audi A6</name>
+		<type>sedan</type>
+		<ecapacity>2.7</ecapacity>
+	</car>
+
+	<car>
+		<price>6500</price>
+		<age>1990</age>
+		<hp>75</hp>
+		<mileage>43</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Fiat 125p</name>
+		<type>sedan</type>
+		<ecapacity>1.5</ecapacity>
+	</car>
+
+	<car>
+		<price>19500</price>
+		<age>2002</age>
+		<hp>250</hp>
+		<mileage>160</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Audi A6</name>
+		<type>kombi</type>
+		<ecapacity>2.7</ecapacity>
+	</car>
+
+	<car>
+		<price>30000</price>
+		<age>2011</age>
+		<hp>231</hp>
+		<mileage>122</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Volvo V70 III</name>
+		<type>kombi</type>
+		<ecapacity>2.5</ecapacity>
+	</car>
+	<car>
+		<price>28000</price>
+		<age>2007</age>
+		<hp>170</hp>
+		<mileage>179</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Skoda Ocrabia II</name>
+		<type>kombi</type>
+		<ecapacity>2.0</ecapacity>
+	</car>
+	<car>
+		<price>7000</price>
+		<age>1987</age>
+		<hp>100</hp>
+		<mileage>143</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Audi 100 C3</name>
+		<type>sedan</type>
+		<ecapacity>1.8</ecapacity>
+	</car>
+	<car>
+		<price>55500</price>
+		<age>1989</age>
+		<hp>530</hp>
+		<mileage>-</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>BMW 3 E30</name>
+		<type>coupe</type>
+		<ecapacity>3.0</ecapacity>
+	</car>
+	<car>
+		<price>27500</price>
+		<age>2003</age>
+		<hp>231</hp>
+		<mileage>276</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>BMW 3 E46 cabrio</name>
+		<type>kabriolet</type>
+		<ecapacity>3.0</ecapacity>
+	</car>
+	<car>
+		<price>2500</price>
+		<age>1995</age>
+		<hp>150</hp>
+		<mileage>238</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>VW Golf III</name>
+		<type>hatchback</type>
+		<ecapacity>2.0</ecapacity>
+	</car>
+	<car>
+		<price>9000</price>
+		<age>1996</age>
+		<hp>215</hp>
+		<mileage>170</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Jeep Grand Cherokee I</name>
+		<type>terenowy</type>
+		<ecapacity>5.2</ecapacity>
+	</car>
+	<car>
+		<price>2700</price>
+		<age>1997</age>
+		<hp>90</hp>
+		<mileage>226</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Honda Civic VI</name>
+		<type>sedan</type>
+		<ecapacity>1.4</ecapacity>
+	</car>
+	<car>
+		<price>5000</price>
+		<age>1996</age>
+		<hp>150</hp>
+		<mileage>270</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Audi A4</name>
+		<type>sedan</type>
+		<ecapacity>1.8</ecapacity>
+	</car>
+	<car>
+		<price>1500</price>
+		<age>1994</age>
+		<hp>132</hp>
+		<mileage>260</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Ford Scorpio Mk1</name>
+		<type>hatchback</type>
+		<ecapacity>2.0</ecapacity>
+	</car>
+	<car>
+		<price>249000</price>
+		<age>2004</age>
+		<hp>457</hp>
+		<mileage>45</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Rolls Royce Park Ward</name>
+		<type>sedan</type>
+		<ecapacity>6.8</ecapacity>
+	</car>
+
+
+
+
+	<car>
+		<price>57500</price>
+		<age>2013</age>
+		<hp>170</hp>
+		<mileage>63</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Skoda Superb</name>
+		<type>kombi</type>
+		<ecapacity>2.0</ecapacity>
+	</car>
+	<car>
+		<price>32000</price>
+		<age>2008</age>
+		<hp>260</hp>
+		<mileage>189</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Skoda Superb</name>
+		<type>sedan</type>
+		<ecapacity>3.6</ecapacity>
+	</car>
+	<car>
+		<price>33000</price>
+		<age>1985</age>
+		<hp>126</hp>
+		<mileage>-</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Alfa Romeo Spider</name>
+		<type>kabriolet</type>
+		<ecapacity>2.0</ecapacity>
+	</car>
+	<car>
+		<price>28000</price>
+		<age>2006</age>
+		<hp>163</hp>
+		<mileage>116</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Audi A4</name>
+		<type>kombi</type>
+		<ecapacity>1.8</ecapacity>
+	</car>
+	<car>
+		<price>18000</price>
+		<age>2009</age>
+		<hp>100</hp>
+		<mileage>156</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Voklswagen Polo V</name>
+		<type>hatchback</type>
+		<ecapacity>1.6</ecapacity>
+	</car>
+	<car>
+		<price>66000</price>
+		<age>2013</age>
+		<hp>184</hp>
+		<mileage>130</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>VW Golf VII</name>
+		<type>hatchback</type>
+		<ecapacity>2.0</ecapacity>
+	</car>
+	<car>
+		<price>9000</price>
+		<age>1996</age>
+		<hp>176</hp>
+		<mileage>208</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>VW Golf III</name>
+		<type>hatchback</type>
+		<ecapacity>2.8</ecapacity>
+	</car>
+	<car>
+		<price>18500</price>
+		<age>2003</age>
+		<hp>163</hp>
+		<mileage>221</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Audi A4 B6</name>
+		<type>sedan</type>
+		<ecapacity>1.8</ecapacity>
+	</car>
+	<car>
+		<price>31000</price>
+		<age>1974</age>
+		<hp>120</hp>
+		<mileage>-</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>BMW E10</name>
+		<type>sedan</type>
+		<ecapacity>2.0</ecapacity>
+	</car>
+
+
+
+
+
+
+
+
+
+
+
+	<car>
+		<price>43000</price>
+		<age>2006</age>
+		<hp>240</hp>
+		<mileage>248</mileage>
+		<diesel>1</diesel>
+		<automatic>1</automatic>
+		<name>Audi Q7 I</name>
+		<type>suv</type>
+		<ecapacity>3.0</ecapacity>
+	</car>
+	<car>
+		<price>43500</price>
+		<age>2009</age>
+		<hp>260</hp>
+		<mileage>158</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Opel Insignia</name>
+		<type>sedan</type>
+		<ecapacity>2.8</ecapacity>
+	</car>
+	<car>
+		<price>33000</price>
+		<age>1981</age>
+		<hp>86</hp>
+		<mileage>44</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Fiat X1/9</name>
+		<type>kabriolet</type>
+		<ecapacity>1.5</ecapacity>
+	</car>
+	<car>
+		<price>14500</price>
+		<age>2004</age>
+		<hp>200</hp>
+		<mileage>309</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Seat Leon I</name>
+		<type>hatchback</type>
+		<ecapacity>1.9</ecapacity>
+	</car>
+	<car>
+		<price>59000</price>
+		<age>2015</age>
+		<hp>192</hp>
+		<mileage>70</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Mazda 6</name>
+		<type>sedan</type>
+		<ecapacity>2.5</ecapacity>
+	</car>
+	<car>
+		<price>8000</price>
+		<age>1990</age>
+		<hp>192</hp>
+		<mileage>230</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>BMW 5 E34</name>
+		<type>sedan</type>
+		<ecapacity>2.5</ecapacity>
+	</car>
+	<car>
+		<price>50000</price>
+		<age>2006</age>
+		<hp>208</hp>
+		<mileage>174</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Lexus IS 250</name>
+		<type>sedan</type>
+		<ecapacity>2.5</ecapacity>
+	</car>
+	<car>
+		<price>45000</price>
+		<age>2009</age>
+		<hp>211</hp>
+		<mileage>162</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Audi A5</name>
+		<type>coupe</type>
+		<ecapacity>2.0</ecapacity>
+	</car>
+	<car>
+		<price>8500</price>
+		<age>1999</age>
+		<hp>200</hp>
+		<mileage>194</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Honda Accord VI coupe</name>
+		<type>coupe</type>
+		<ecapacity>3.0</ecapacity>
+	</car>
+
+
+
+
+
+
+
+	<car>
+		<price>7000</price>
+		<age>1987</age>
+		<hp>75</hp>
+		<mileage>246</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Mercedes W124</name>
+		<type>sedan</type>
+		<ecapacity>2.0</ecapacity>
+	</car>
+	<car>
+		<price>13000</price>
+		<age>2008</age>
+		<hp>105</hp>
+		<mileage>129</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>VW Gold V</name>
+		<type>kombi</type>
+		<ecapacity>1.9</ecapacity>
+	</car>
+	<car>
+		<price>28000</price>
+		<age>2006</age>
+		<hp>143</hp>
+		<mileage>190</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>BMW 3 E90</name>
+		<type>sedan</type>
+		<ecapacity>2.0</ecapacity>
+	</car>
+	<car>
+		<price>18000</price>
+		<age>1973</age>
+		<hp>45</hp>
+		<mileage>26</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Skoda 1100</name>
+		<type>sedan</type>
+		<ecapacity>1.1</ecapacity>
+	</car>
+	<car>
+		<price>19000</price>
+		<age>2010</age>
+		<hp>110</hp>
+		<mileage>120</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Reanult Megane III</name>
+		<type>hatchback</type>
+		<ecapacity>1.5</ecapacity>
+	</car>
+	<car>
+		<price>6000</price>
+		<age>2001</age>
+		<hp>130</hp>
+		<mileage>223</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>VW Golf IV</name>
+		<type>hatchback</type>
+		<ecapacity>1.9</ecapacity>
+	</car>
+	<car>
+		<price>13000</price>
+		<age>2004</age>
+		<hp>90</hp>
+		<mileage>206</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Opel astra III</name>
+		<type>hatchback</type>
+		<ecapacity>1.4</ecapacity>
+	</car>
+	<car>
+		<price>8500</price>
+		<age>2004</age>
+		<hp>84</hp>
+		<mileage>160</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Mazda 3 I</name>
+		<type>hatchback</type>
+		<ecapacity>1.4</ecapacity>
+	</car>
+	<car>
+		<price>5000</price>
+		<age>2003</age>
+		<hp>60</hp>
+		<mileage>207</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Peugeot 206</name>
+		<type>hatchback</type>
+		<ecapacity>1.1</ecapacity>
+	</car>
+	<car>
+		<price>22000</price>
+		<age>2008</age>
+		<hp>109</hp>
+		<mileage>78</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Hyundai i30</name>
+		<type>hatchback</type>
+		<ecapacity>1.4</ecapacity>
+	</car>
+	<car>
+		<price>14000</price>
+		<age>2008</age>
+		<hp>90</hp>
+		<mileage>217</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Opel Astra III</name>
+		<type>hatchback</type>
+		<ecapacity>1.3</ecapacity>
+	</car>
+	<car>
+		<price>13000</price>
+		<age>2006</age>
+		<hp>105</hp>
+		<mileage>165</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Seat Leon I </name>
+		<type>hatchback</type>
+		<ecapacity>1.6</ecapacity>
+	</car>
+	<car>
+		<price>27000</price>
+		<age>2012</age>
+		<hp>69</hp>
+		<mileage>138</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Toyota Yaris</name>
+		<type>hatchback</type>
+		<ecapacity>1.0</ecapacity>
+	</car>
+	<car>
+		<price>20000</price>
+		<age>2011</age>
+		<hp>105</hp>
+		<mileage>191</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Fiat Bravo II</name>
+		<type>hatchback</type>
+		<ecapacity>1.6</ecapacity>
+	</car>
 </cars>
