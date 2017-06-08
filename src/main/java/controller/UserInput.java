@@ -10,14 +10,16 @@ public class UserInput {
     private final double hp;
     private final Engine engine;
     private final Transmission transmission;
+    private final String type;
 
-    public UserInput(double price, double age, double hp, Engine engine, Transmission transmission) {
+    public UserInput(double price, double age, double hp, Engine engine, Transmission transmission, String type) {
 
         this.price = price;
         this.age = age;
         this.hp = hp;
         this.engine = engine;
         this.transmission = transmission;
+        this.type = type;
     }
 
     public double getPrice() {
@@ -34,9 +36,13 @@ public class UserInput {
 
     public boolean isDieselSelected() {return engine != Engine.NONE;}
 
+    public boolean isTypeSelected() {return type!=null;}
+
     public boolean isAutomatic() {return transmission == Transmission.AUTOMATIC;}
 
     public boolean isDiesel() {return engine == Engine.DIESEL;}
+
+    public String getType() {return type;}
 
     @Override
     public String toString() {

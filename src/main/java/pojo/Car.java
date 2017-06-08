@@ -8,6 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement
 public class Car {
+    public static String ALL_TYPES = "Wszystkie";
     //do rozbudowy o kolejne zmienne w zaleznosci od potrzeb, ale to pewnie juz na koncu projektu
     private int price;
     private int age;

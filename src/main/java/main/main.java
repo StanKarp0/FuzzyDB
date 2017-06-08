@@ -12,12 +12,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import model.Dao;
 import pojo.Car;
 import view.CarView;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,6 +54,9 @@ public class main extends Application {
     private RadioButton automatic;
 
     @FXML
+    private ChoiceBox<String> type;
+
+    @FXML
     private TableView tableView;
 
     private final Dao dao;
@@ -78,8 +84,8 @@ public class main extends Application {
             stage.show();
 
             loadControls();
-            loadTableView(new UserInput(10000, 10, 90, Engine.NONE, Transmission.NONE));
-
+            loadTableView(new UserInput(10000, 10, 90, Engine.NONE, Transmission.NONE, null));
+            
         } catch (Exception e) {
             System.out.println("start" + e);
             e.printStackTrace();
@@ -94,6 +100,7 @@ public class main extends Application {
         ToggleGroup group2 = new ToggleGroup();
         automatic.setToggleGroup(group2);
         manual.setToggleGroup(group2);
+        type.setItems(FXCollections.observableArrayList(Car.ALL_TYPES, "hatchback", "sedan", "kombi", "suv", "coupe", "minivan", "pick-up", "kabriolet", "terenowy"));
         search.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
@@ -130,7 +137,7 @@ public class main extends Application {
                     selectedHp = -1;
                 }
 
-                UserInput input = new UserInput(selectedPrice, selectedAge, selectedHp, engine, transmission);
+                UserInput input = new UserInput(selectedPrice, selectedAge, selectedHp, engine, transmission, type.getValue());
                 loadTableView(input);
             }
         });
