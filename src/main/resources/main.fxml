@@ -32,12 +32,12 @@
         <Label text="Silnik" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="2"/>
         <RadioButton fx:id="petrol" mnemonicParsing="false" text="Benzynowy" GridPane.columnIndex="1" GridPane.rowIndex="4" />
         <RadioButton fx:id="diesel" mnemonicParsing="false" text="Diesel" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-        <RadioButton fx:id="engine" mnemonicParsing="false" text="Oba" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <RadioButton fx:id="engine" mnemonicParsing="false" text="Dowolny" GridPane.columnIndex="1" GridPane.rowIndex="6" />
 
         <Label text="Skrzynia biegów" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="7" />
         <RadioButton fx:id="automatic" mnemonicParsing="false" text="Automatyczna" GridPane.columnIndex="1" GridPane.rowIndex="8" />
         <RadioButton fx:id="manual" mnemonicParsing="false" text="Manualna" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-        <RadioButton fx:id="transmission" mnemonicParsing="false" text="Oba" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+        <RadioButton fx:id="transmission" mnemonicParsing="false" text="Dowolna" GridPane.columnIndex="1" GridPane.rowIndex="10" />
 
         <Label text="Typ nadwozia" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="11" />
         <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="12" fx:id="type"/>
