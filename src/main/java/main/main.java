@@ -17,7 +17,9 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import model.Dao;
 import pojo.Car;
+import view.CarView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -126,7 +128,10 @@ public class main extends Application {
                 UserInput input = new UserInput(selectedPrice, selectedAge, selectedHp, engine, transmission);
                 List<Car> cars = dao.find(input);
                 cars.forEach(System.out::println);
+
+
             }
         });
     }
+    
 }

@@ -4,24 +4,55 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
 
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.collections.FXCollections?>
+<?import pojo.Car?>
+<HBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml" spacing="10">
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml">
-    <children>
-        <Label layoutX="163.0" layoutY="107.0" text="Cena" />
-        <Label layoutX="163.0" layoutY="143.0" text="Wiek" />
-        <Label layoutX="163.0" layoutY="171.0" text="Moc" />
-        <Label layoutX="163.0" layoutY="217.0" text="Silnik" />
-        <Label layoutX="132.0" layoutY="294.0" text="Skrzynia biegów" />
-        <TextField layoutX="226.0" layoutY="103.0" fx:id="price">10000</TextField>
-        <TextField layoutX="226.0" layoutY="139.0" fx:id="age">10</TextField>
-        <TextField layoutX="226.0" layoutY="167.0" fx:id="hp">90</TextField>
-        <RadioButton layoutX="226.0" layoutY="217.0" mnemonicParsing="false" text="Benzynowy" fx:id="petrol"/>
-        <RadioButton layoutX="226.0" layoutY="234.0" mnemonicParsing="false" text="Diesel" fx:id="diesel"/>
-        <RadioButton layoutX="236.0" layoutY="294.0" mnemonicParsing="false" text="Automatyczna" fx:id="automatic"/>
-        <RadioButton layoutX="230.0" layoutY="311.0" mnemonicParsing="false" text="Manualna" fx:id="manual"/>
-        <Button layoutX="241.0" layoutY="343.0" mnemonicParsing="false" text="Szukaj" fx:id="search" />
-    </children>
-</AnchorPane>
+    <GridPane  hgap="10" vgap="10">
+        <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Cena" />
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="Wiek" />
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="2" text="Moc" />
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="3" text="Silnik" />
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="2" text="Skrzynia biegów" />
+        <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="2" fx:id="price">10000</TextField>
+        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.columnSpan="2" fx:id="age">10</TextField>
+        <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="hp">90</TextField>
+        <RadioButton GridPane.columnIndex="1" GridPane.rowIndex="4" mnemonicParsing="false" text="Benzynowy" fx:id="petrol"/>
+        <RadioButton GridPane.columnIndex="1" GridPane.rowIndex="5" mnemonicParsing="false" text="Diesel" fx:id="diesel"/>
+        <RadioButton GridPane.columnIndex="1" GridPane.rowIndex="7" mnemonicParsing="false" text="Automatyczna" fx:id="automatic"/>
+        <RadioButton GridPane.columnIndex="1" GridPane.rowIndex="8" mnemonicParsing="false" text="Manualna" fx:id="manual"/>
+        <Button GridPane.columnIndex="0" GridPane.rowIndex="9" GridPane.columnSpan="2" mnemonicParsing="false" text="Szukaj" fx:id="search" />
+    </GridPane>
+
+    <TableView fx:id="tableView" GridPane.columnIndex="0"
+               GridPane.rowIndex="1">
+        <columns>
+            "Price: "+price+", Age: "+age+", Hp: "+hp+", isAutomatic: "+isAutomatic+", isDiesel: "+isDiesel
+            <TableColumn fx:id="price_col" text="Cena" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="price" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Wiek" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="age" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Moc" prefWidth="200">
+                <cellValueFactory>
+                    <PropertyValueFactory property="hp" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+</HBox>
