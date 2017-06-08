@@ -79,11 +79,14 @@ public class Dao {
         attractFuzzy.addRule(hp_adapt.eq("medium").and(age_adapt.eq("medium")).then("medium"));
         attractFuzzy.addRule(hp_adapt.eq("high").or(age_adapt.eq("high")).then("medium"));
         attractFuzzy.addRule(price_adapt.eq("high").and(hp_adapt.eq("low")).then("medium"));
+        attractFuzzy.addRule(price_adapt.eq("medium").and(age_adapt.eq("medium")).then("medium"));
+        attractFuzzy.addRule(price_adapt.eq("medium").and(hp_adapt.eq("medium")).then("medium"));
 
         //low
         attractFuzzy.addRule(price_adapt.eq("medium").and(age_adapt.eq("low")).then("low"));
+        attractFuzzy.addRule(price_adapt.eq("medium").and(hp_adapt.eq("low")).and(age_adapt.eq("low")).then("low"));
         attractFuzzy.addRule(price_adapt.eq("low").then("low"));
-        attractFuzzy.addRule(hp_adapt.eq("low").then("low"));
+        attractFuzzy.addRule(hp_adapt.eq("low").and(age_adapt.eq("low")).then("low"));
 
 
         Function<Car, Model<Car, UserInput>> builder = Model.builder(attractFuzzy, (car, userInput) -> {
