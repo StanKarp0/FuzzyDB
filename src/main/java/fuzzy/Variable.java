@@ -11,7 +11,7 @@ public class Variable {
     private final String name;
     private final Map<String, FuzzyFnc> mFnc;
     private final double max, min;
-    private final static double N_INT = 5000;
+    private final static double N_INT = 100;
 
     public Variable(String name, double min, double max) {
         this.name = name;
