@@ -90,7 +90,16 @@ public class main extends Application {
             stage.show();
 
             loadControls();
-            loadTableView(new UserInput(10000, 10, 90, Engine.NONE, Transmission.NONE, null));
+            try {
+                loadTableView(new UserInput(10000, 10, 90, Engine.NONE, Transmission.NONE, null));
+            }catch(Exception e){
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error Dialog");
+                alert.setHeaderText("Brak pliku cars.xml!");
+                alert.setContentText("Brak pliku cars.xml!");
+
+                alert.showAndWait();
+            }
             
         } catch (Exception e) {
             System.out.println("start" + e);
