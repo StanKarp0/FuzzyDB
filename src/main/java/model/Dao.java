@@ -45,19 +45,20 @@ public class Dao {
 
     public Dao(){
         Variable price_adapt = new Variable("price_adapt", 0., 1.);
-        price_adapt.addMFnc("low", FuzzyFnc.gaussmf(0.15, 0));
-        price_adapt.addMFnc("medium", FuzzyFnc.gaussmf(0.15, 0.5));
-        price_adapt.addMFnc("high", FuzzyFnc.gaussmf(0.15, 1.));
+        price_adapt.addMFnc("low", FuzzyFnc.trapmf(-1, -0.5, 0.3, 0.5));
+        price_adapt.addMFnc("medium", FuzzyFnc.gaussmf(0.1, 0.6));
+        //price_adapt.addMFnc("high", FuzzyFnc.gaussmf(0.15, 1.));
+        price_adapt.addMFnc("high", FuzzyFnc.trapmf(0.7, 0.8, 2, 3));
 
         Variable age_adapt = new Variable("age_adapt", 0., 1.);
-        age_adapt.addMFnc("low", FuzzyFnc.gaussmf(0.15, 0));
-        age_adapt.addMFnc("medium", FuzzyFnc.gaussmf(0.15, 0.5));
-        age_adapt.addMFnc("high", FuzzyFnc.gaussmf(0.15, 1.));
+        age_adapt.addMFnc("low", FuzzyFnc.trapmf(-1, -0.5, 0.1, 0.35));
+        //age_adapt.addMFnc("medium", FuzzyFnc.trapmf(0.3, 0.5, 0.6, 0.7));
+        age_adapt.addMFnc("high", FuzzyFnc.trapmf(0.3, 0.40, 2, 3));
 
         Variable hp_adapt = new Variable("hp_adapt", 0., 1.);
-        hp_adapt.addMFnc("low", FuzzyFnc.gaussmf(0.15, 0));
-        hp_adapt.addMFnc("medium", FuzzyFnc.gaussmf(0.15, 0.5));
-        hp_adapt.addMFnc("high", FuzzyFnc.gaussmf(0.15, 1.));
+        hp_adapt.addMFnc("low", FuzzyFnc.trapmf(-1, -0.5, 0.3, 0.5));
+        hp_adapt.addMFnc("medium", FuzzyFnc.trapmf(0.35, 0.5, 0.6, 0.7));
+        hp_adapt.addMFnc("high", FuzzyFnc.trapmf(0.6, 0.75, 2, 3));
 
         Variable attract = new Variable("attract", 0., 1.);
         attract.addMFnc("low", FuzzyFnc.gaussmf(0.15, 0));
@@ -66,9 +67,9 @@ public class Dao {
 
         Fuzzy attractFuzzy = new Fuzzy(attract);
         //high
-        attractFuzzy.addRule(price_adapt.eq("high").then("high"));
-        attractFuzzy.addRule(price_adapt.eq("medium").and(age_adapt.eq("high")).then("high"));
-        attractFuzzy.addRule(price_adapt.eq("medium").and(hp_adapt.eq("high")).then("high"));
+        //attractFuzzy.addRule(price_adapt.eq("high").then("high"));
+        attractFuzzy.addRule(price_adapt.eq("high").and(age_adapt.eq("high")).then("high"));
+        attractFuzzy.addRule(price_adapt.eq("high").and(hp_adapt.eq("high")).then("high"));
 
         //medium
         attractFuzzy.addRule(price_adapt.eq("high").and(age_adapt.eq("low")).then("medium"));
