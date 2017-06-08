@@ -7,6 +7,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
 import java.io.FileInputStream;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -24,6 +25,7 @@ public class XmlManager{
 
             for(Car car : cars.getCars())
             {
+                car.setAge(Calendar.getInstance().get(Calendar.YEAR)-car.getAge());
                 list.add(car);
             }
         }catch(Exception e){

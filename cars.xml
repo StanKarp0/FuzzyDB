@@ -1,404 +1,604 @@
 <cars>
 	<car>
-		<price>10990</price>
-		<age>8</age>
-		<hp>97</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-		<name>Marka Model12</name>
-		<type>Nadwozie1</type>
-		<ecapacity>2.3</ecapacity>
+		<price>2600</price>
+		<age>2002</age>
+		<hp>120</hp>
+		<mileage>280</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Renault Laguna II</name>
+		<type>kombi</type>
+		<ecapacity>1.9</ecapacity>
 	</car>
+
 	<car>
-		<price>36416</price>
-		<age>5</age>
-		<hp>58</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-		<name>Marka Model12</name>
-		<type>Nadwozie2</type>
-		<ecapacity>1.5</ecapacity>
+		<price>25000</price>
+		<age>2004</age>
+		<hp>230</hp>
+		<mileage>220</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Subaru Forester II</name>
+		<type>kombi</type>
+		<ecapacity>2.5</ecapacity>
 	</car>
+
 	<car>
-		<price>10399</price>
-		<age>6</age>
-		<hp>211</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model10</name>
-		<type>Nadwozie0</type>
-		<ecapacity>2.9</ecapacity>
+		<price>2188</price>
+		<age>2001</age>
+		<hp>75</hp>
+		<mileage>240</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Peugeot 206</name>
+		<type>hatchback</type>
+		<ecapacity>1.4</ecapacity>
 	</car>
+
 	<car>
-		<price>17069</price>
-		<age>4</age>
-		<hp>171</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model12</name>
-		<type>Nadwozie3</type>
-		<ecapacity>2.0</ecapacity>
-	</car>
-	<car>
-		<price>7754</price>
-		<age>5</age>
-		<hp>105</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-		<name>Marka Model16</name>
-		<type>Nadwozie1</type>
-		<ecapacity>1.5</ecapacity>
-	</car>
-	<car>
-		<price>10508</price>
-		<age>4</age>
-		<hp>161</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model4</name>
-		<type>Nadwozie1</type>
+		<price>265000</price>
+		<age>2014</age>
+		<hp>431</hp>
+		<mileage>37</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>BMW M3</name>
+		<type>sedan</type>
 		<ecapacity>3.0</ecapacity>
 	</car>
 	<car>
-		<price>26367</price>
-		<age>9</age>
-		<hp>159</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-		<name>Marka Model6</name>
-		<type>Nadwozie3</type>
-		<ecapacity>0.9</ecapacity>
-	</car>
-	<car>
-		<price>6621</price>
-		<age>3</age>
-		<hp>241</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model8</name>
-		<type>Nadwozie2</type>
-		<ecapacity>1.2</ecapacity>
-	</car>
-	<car>
-		<price>37360</price>
-		<age>6</age>
-		<hp>232</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model9</name>
-		<type>Nadwozie1</type>
-		<ecapacity>2.4</ecapacity>
-	</car>
-	<car>
-		<price>46402</price>
-		<age>7</age>
-		<hp>111</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model7</name>
-		<type>Nadwozie0</type>
-		<ecapacity>1.6</ecapacity>
-	</car>
-	<car>
-		<price>5283</price>
-		<age>2</age>
-		<hp>226</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model19</name>
-		<type>Nadwozie0</type>
-		<ecapacity>2.2</ecapacity>
-	</car>
-	<car>
-		<price>23354</price>
-		<age>0</age>
-		<hp>200</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-		<name>Marka Model0</name>
-		<type>Nadwozie1</type>
-		<ecapacity>3.3</ecapacity>
-	</car>
-	<car>
-		<price>15722</price>
-		<age>2</age>
-		<hp>249</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-		<name>Marka Model17</name>
-		<type>Nadwozie1</type>
-		<ecapacity>2.8</ecapacity>
-	</car>
-	<car>
-		<price>26287</price>
-		<age>9</age>
-		<hp>185</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-		<name>Marka Model5</name>
-		<type>Nadwozie3</type>
-		<ecapacity>3.3</ecapacity>
-	</car>
-	<car>
-		<price>12886</price>
-		<age>8</age>
-		<hp>50</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-		<name>Marka Model19</name>
-		<type>Nadwozie1</type>
-		<ecapacity>3.6</ecapacity>
-	</car>
-	<car>
-		<price>4200</price>
-		<age>4</age>
-		<hp>189</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model17</name>
-		<type>Nadwozie2</type>
-		<ecapacity>1.1</ecapacity>
-	</car>
-	<car>
-		<price>42342</price>
-		<age>4</age>
-		<hp>105</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model3</name>
-		<type>Nadwozie2</type>
-		<ecapacity>2.3</ecapacity>
-	</car>
-	<car>
-		<price>10566</price>
-		<age>0</age>
-		<hp>154</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model7</name>
-		<type>Nadwozie2</type>
+		<price>4500</price>
+		<age>1992</age>
+		<hp>60</hp>
+		<mileage>120</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Suzuki Samurai</name>
+		<type>kabriolet</type>
 		<ecapacity>1.3</ecapacity>
 	</car>
 	<car>
-		<price>36740</price>
-		<age>3</age>
-		<hp>123</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-		<name>Marka Model11</name>
-		<type>Nadwozie2</type>
-		<ecapacity>3.7</ecapacity>
+		<price>25000</price>
+		<age>1963</age>
+		<hp>90</hp>
+		<mileage>160</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Mercedes W110</name>
+		<type>sedan</type>
+		<ecapacity>1.9</ecapacity>
 	</car>
 	<car>
-		<price>34441</price>
-		<age>7</age>
-		<hp>148</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-		<name>Marka Model8</name>
-		<type>Nadwozie2</type>
-		<ecapacity>3.5</ecapacity>
+		<price>30000</price>
+		<age>2006</age>
+		<hp>234</hp>
+		<mileage>276</mileage>
+		<diesel>1</diesel>
+		<automatic>1</automatic>
+		<name>BMW 5 E60</name>
+		<type>sedan</type>
+		<ecapacity>3.0</ecapacity>
 	</car>
 	<car>
-		<price>45616</price>
-		<age>5</age>
-		<hp>236</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model19</name>
-		<type>Nadwozie1</type>
-		<ecapacity>2.6</ecapacity>
+		<price>51000</price>
+		<age>2012</age>
+		<hp>163</hp>
+		<mileage>113</mileage>
+		<diesel>1</diesel>
+		<automatic>1</automatic>
+		<name>Citroen DS5</name>
+		<type>hatchback</type>
+		<ecapacity>2.0</ecapacity>
 	</car>
 	<car>
-		<price>31235</price>
-		<age>0</age>
-		<hp>79</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model8</name>
-		<type>Nadwozie2</type>
-		<ecapacity>1.1</ecapacity>
+		<price>6000</price>
+		<age>2005</age>
+		<hp>110</hp>
+		<mileage>110</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Citroen C4 I</name>
+		<type>hatchback</type>
+		<ecapacity>1.6</ecapacity>
 	</car>
 	<car>
-		<price>35178</price>
-		<age>4</age>
-		<hp>112</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model12</name>
-		<type>Nadwozie1</type>
+		<price>10500</price>
+		<age>2012</age>
+		<hp>115</hp>
+		<mileage>45</mileage>
+		<diesel>1</diesel>
+		<automatic>1</automatic>
+		<name>Kia Cee'd I</name>
+		<type>kombi</type>
+		<ecapacity>1.6</ecapacity>
+	</car>
+	<car>
+		<price>1350</price>
+		<age>1993</age>
+		<hp>100</hp>
+		<mileage>135</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>VW Golf III</name>
+		<type>hatchback</type>
+		<ecapacity>1.9</ecapacity>
+	</car>
+	<car>
+		<price>77000</price>
+		<age>2006</age>
+		<hp>400</hp>
+		<mileage>116</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Maserati Quattroporte</name>
+		<type>sedan</type>
+		<ecapacity>4.2</ecapacity>
+	</car>
+	<car>
+		<price>8300</price>
+		<age>2007</age>
+		<hp>150</hp>
+		<mileage>270</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Opel Astra III</name>
+		<type>kombi</type>
+		<ecapacity>1.9</ecapacity>
+	</car>
+	<car>
+		<price>20000</price>
+		<age>2000</age>
+		<hp>222</hp>
+		<mileage>192</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Lexus GS II</name>
+		<type>sedan</type>
+		<ecapacity>3.0</ecapacity>
+	</car>
+
+
+	<car>
+		<price>42000</price>
+		<age>2010</age>
+		<hp>235</hp>
+		<mileage>102</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Alfa Romeo Giulietta</name>
+		<type>hatchback</type>
+		<ecapacity>1.8</ecapacity>
+	</car>
+
+	<car>
+		<price>27500</price>
+		<age>2005</age>
+		<hp>270</hp>
+		<mileage>100</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Nissan Pathfinder</name>
+		<type>terenowy</type>
+		<ecapacity>4.0</ecapacity>
+	</car>
+
+	<car>
+		<price>8500</price>
+		<age>2007</age>
+		<hp>150</hp>
+		<mileage>103</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Fiat Bravo II</name>
+		<type>hatchback</type>
+		<ecapacity>1.4</ecapacity>
+	</car>
+
+	<car>
+		<price>23800</price>
+		<age>2004</age>
+		<hp>131</hp>
+		<mileage>258</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Audi A4 B6</name>
+		<type>kombi</type>
+		<ecapacity>1.9</ecapacity>
+	</car>
+	<car>
+		<price>21500</price>
+		<age>2004</age>
+		<hp>235</hp>
+		<mileage>240</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Audi A4 B7</name>
+		<type>sedan</type>
+		<ecapacity>3.0</ecapacity>
+	</car>
+	<car>
+		<price>48000</price>
+		<age>2002</age>
+		<hp>306</hp>
+		<mileage>120</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Mercedes SL500</name>
+		<type>kabriolet</type>
+		<ecapacity>5.0</ecapacity>
+	</car>
+	<car>
+		<price>45000</price>
+		<age>2011</age>
+		<hp>170</hp>
+		<mileage>208</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Audi A4 B8</name>
+		<type>kombi</type>
+		<ecapacity>2.0</ecapacity>
+	</car>
+	<car>
+		<price>265000</price>
+		<age>2014</age>
+		<hp>450</hp>
+		<mileage>27</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Audi RS5</name>
+		<type>coupe</type>
+		<ecapacity>4.2</ecapacity>
+	</car>
+	<car>
+		<price>15000</price>
+		<age>2006</age>
+		<hp>204</hp>
+		<mileage>187</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Peugeot 406</name>
+		<type>coupe</type>
+		<ecapacity>2.7</ecapacity>
+	</car>
+	<car>
+		<price>7500</price>
+		<age>1990</age>
+		<hp>69</hp>
+		<mileage>180</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Suzuki Samurai</name>
+		<type>terenowy</type>
+		<ecapacity>1.3</ecapacity>
+	</car>
+	<car>
+		<price>32000</price>
+		<age>2007</age>
+		<hp>281</hp>
+		<mileage>142</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Ford Focus ST Mk2</name>
+		<type>hatchback</type>
+		<ecapacity>2.5</ecapacity>
+	</car>
+	<car>
+		<price>75000</price>
+		<age>1966</age>
+		<hp>110</hp>
+		<mileage>100</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Ford Mustang</name>
+		<type>coupe</type>
+		<ecapacity>3.3</ecapacity>
+	</car>
+	<car>
+		<price>15000</price>
+		<age>2004</age>
+		<hp>105</hp>
+		<mileage>221</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>VW Caddy III</name>
+		<type>kombi</type>
+		<ecapacity>1.9</ecapacity>
+	</car>
+	<car>
+		<price>2000</price>
+		<age>1996</age>
+		<hp>90</hp>
+		<mileage>260</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>VW Golf III</name>
+		<type>hatchback</type>
+		<ecapacity>1.8</ecapacity>
+	</car>
+
+
+
+
+	<car>
+		<price>1500</price>
+		<age>1987</age>
+		<hp>55</hp>
+		<mileage>224</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>VW Polo I</name>
+		<type>hatchback</type>
+		<ecapacity>1.3</ecapacity>
+	</car>
+	<car>
+		<price>26500</price>
+		<age>2013</age>
+		<hp>136</hp>
+		<mileage>132</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>Fiat Doblo II</name>
+		<type>minivan</type>
+		<ecapacity>2.0</ecapacity>
+	</car>
+	<car>
+		<price>127500</price>
+		<age>2015</age>
+		<hp>300</hp>
+		<mileage>30</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Audi S3</name>
+		<type>sedan</type>
+		<ecapacity>2.0</ecapacity>
+	</car>
+	<car>
+		<price>9500</price>
+		<age>1979</age>
+		<hp>225</hp>
+		<mileage>300</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Mercedes W116</name>
+		<type>sedan</type>
+		<ecapacity>4.5</ecapacity>
+	</car>
+	<car>
+		<price>30000</price>
+		<age>2005</age>
+		<hp>350</hp>
+		<mileage>227</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Dodge RAM</name>
+		<type>pick-up</type>
+		<ecapacity>5.7</ecapacity>
+	</car>
+	<car>
+		<price>48000</price>
+		<age>2010</age>
+		<hp>300</hp>
+		<mileage>76</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Ford Focus ST Mk2</name>
+		<type>hatchback</type>
+		<ecapacity>2.5</ecapacity>
+	</car>
+	<car>
+		<price>30000</price>
+		<age>2005</age>
+		<hp>300</hp>
+		<mileage>196</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Ford F-150</name>
+		<type>pick-up</type>
+		<ecapacity>5.4</ecapacity>
+	</car>
+	<car>
+		<price>58000</price>
+		<age>1999</age>
+		<hp>400</hp>
+		<mileage>245</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>BMW M5 E39</name>
+		<type>sedan</type>
+		<ecapacity>4.9</ecapacity>
+	</car>
+	<car>
+		<price>21000</price>
+		<age>2001</age>
+		<hp>231</hp>
+		<mileage>252</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>BMW 3 E46</name>
+		<type>sedan</type>
+		<ecapacity>3.0</ecapacity>
+	</car>
+
+
+
+
+
+
+
+
+
+
+
+	<car>
+		<price>22500</price>
+		<age>2004</age>
+		<hp>218</hp>
+		<mileage>289</mileage>
+		<diesel>1</diesel>
+		<automatic>1</automatic>
+		<name>BMW 5 E60</name>
+		<type>sedan</type>
+		<ecapacity>3.0</ecapacity>
+	</car>
+	<car>
+		<price>30000</price>
+		<age>2012</age>
+		<hp>156</hp>
+		<mileage>60</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Peugeot 208</name>
+		<type>hatchback</type>
+		<ecapacity>1.6</ecapacity>
+	</car>
+	<car>
+		<price>67000</price>
+		<age>1976</age>
+		<hp>300</hp>
+		<mileage>-</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Chevrolet Corvette</name>
+		<type>coupe</type>
+		<ecapacity>5.7</ecapacity>
+	</car>
+	<car>
+		<price>7500</price>
+		<age>1980</age>
+		<hp>40</hp>
+		<mileage>-</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Syrena R20</name>
+		<type>pick-up</type>
 		<ecapacity>0.8</ecapacity>
 	</car>
 	<car>
-		<price>27211</price>
-		<age>8</age>
-		<hp>80</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-		<name>Marka Model8</name>
-		<type>Nadwozie2</type>
-		<ecapacity>1.2</ecapacity>
+		<price>12000</price>
+		<age>2003</age>
+		<hp>125</hp>
+		<mileage>170</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>VW Lupo</name>
+		<type>hatchback</type>
+		<ecapacity>1.6</ecapacity>
 	</car>
 	<car>
-		<price>4642</price>
-		<age>2</age>
-		<hp>229</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model1</name>
-		<type>Nadwozie0</type>
-		<ecapacity>3.2</ecapacity>
+		<price>26500</price>
+		<age>1995</age>
+		<hp>185</hp>
+		<mileage>150</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Nissan Patrol GR I</name>
+		<type>terenowy</type>
+		<ecapacity>4.2</ecapacity>
 	</car>
 	<car>
-		<price>43915</price>
-		<age>4</age>
-		<hp>171</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model4</name>
-		<type>Nadwozie3</type>
-		<ecapacity>3.5</ecapacity>
+		<price>29500</price>
+		<age>2009</age>
+		<hp>164</hp>
+		<mileage>116</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Subaru Legacy IV</name>
+		<type>kombi</type>
+		<ecapacity>2.0</ecapacity>
 	</car>
 	<car>
-		<price>21426</price>
-		<age>2</age>
-		<hp>102</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-		<name>Marka Model5</name>
-		<type>Nadwozie2</type>
-		<ecapacity>3.3</ecapacity>
+		<price>4600</price>
+		<age>2000</age>
+		<hp>122</hp>
+		<mileage>26</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Mazda MPV</name>
+		<type>minivan</type>
+		<ecapacity>2.0</ecapacity>
 	</car>
 	<car>
-		<price>13050</price>
-		<age>0</age>
-		<hp>149</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model5</name>
-		<type>Nadwozie1</type>
-		<ecapacity>3.3</ecapacity>
+		<price>9200</price>
+		<age>1992</age>
+		<hp>232</hp>
+		<mileage>300</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Mercedes S W140</name>
+		<type>sedan</type>
+		<ecapacity>3.0</ecapacity>
 	</car>
+
+
+
+
+
+
+
 	<car>
-		<price>8594</price>
-		<age>5</age>
-		<hp>120</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-		<name>Marka Model18</name>
-		<type>Nadwozie1</type>
-		<ecapacity>3.3</ecapacity>
-	</car>
-	<car>
-		<price>44024</price>
-		<age>9</age>
-		<hp>51</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model7</name>
-		<type>Nadwozie2</type>
-		<ecapacity>2.3</ecapacity>
-	</car>
-	<car>
-		<price>22210</price>
-		<age>4</age>
-		<hp>128</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model18</name>
-		<type>Nadwozie1</type>
-		<ecapacity>2.5</ecapacity>
-	</car>
-	<car>
-		<price>7616</price>
-		<age>3</age>
-		<hp>216</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model7</name>
-		<type>Nadwozie0</type>
-		<ecapacity>0.9</ecapacity>
-	</car>
-	<car>
-		<price>39003</price>
-		<age>7</age>
-		<hp>90</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model0</name>
-		<type>Nadwozie2</type>
-		<ecapacity>2.3</ecapacity>
-	</car>
-	<car>
-		<price>46321</price>
-		<age>2</age>
-		<hp>50</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model17</name>
-		<type>Nadwozie1</type>
+		<price>32000</price>
+		<age>2007</age>
+		<hp>156</hp>
+		<mileage>182</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>Mercedes C W204</name>
+		<type>sedan</type>
 		<ecapacity>1.8</ecapacity>
 	</car>
 	<car>
-		<price>45406</price>
-		<age>2</age>
-		<hp>115</hp>
-		<diesel>false</diesel>
-		<automatic>false</automatic>
-		<name>Marka Model19</name>
-		<type>Nadwozie1</type>
-		<ecapacity>2.9</ecapacity>
+		<price>14000</price>
+		<age>2000</age>
+		<hp>184</hp>
+		<mileage>212</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>BMW 3 E46</name>
+		<type>sedan</type>
+		<ecapacity>3.0</ecapacity>
 	</car>
 	<car>
-		<price>20859</price>
-		<age>4</age>
-		<hp>149</hp>
-		<diesel>false</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model2</name>
-		<type>Nadwozie0</type>
-		<ecapacity>2.6</ecapacity>
+		<price>20000</price>
+		<age>2011</age>
+		<hp>143</hp>
+		<mileage>165</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>BMW 3 E91</name>
+		<type>kombi</type>
+		<ecapacity>1.8</ecapacity>
 	</car>
 	<car>
-		<price>33482</price>
-		<age>5</age>
-		<hp>151</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model17</name>
-		<type>Nadwozie0</type>
-		<ecapacity>3.1</ecapacity>
+		<price>22500</price>
+		<age>2007</age>
+		<hp>218</hp>
+		<mileage>171</mileage>
+		<diesel>1</diesel>
+		<automatic>0</automatic>
+		<name>BMW X3 E83</name>
+		<type>suv</type>
+		<ecapacity>3.0</ecapacity>
 	</car>
 	<car>
-		<price>7799</price>
-		<age>8</age>
-		<hp>213</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model18</name>
-		<type>Nadwozie0</type>
-		<ecapacity>2.5</ecapacity>
+		<price>11500</price>
+		<age>2002</age>
+		<hp>220</hp>
+		<mileage>-</mileage>
+		<diesel>0</diesel>
+		<automatic>1</automatic>
+		<name>Audi A4</name>
+		<type>sedan</type>
+		<ecapacity>3.0</ecapacity>
 	</car>
 	<car>
-		<price>9056</price>
-		<age>8</age>
-		<hp>83</hp>
-		<diesel>true</diesel>
-		<automatic>false</automatic>
-		<name>Marka Model8</name>
-		<type>Nadwozie1</type>
-		<ecapacity>3.4</ecapacity>
+		<price>15000</price>
+		<age>1978</age>
+		<hp>85</hp>
+		<mileage>65</mileage>
+		<diesel>0</diesel>
+		<automatic>0</automatic>
+		<name>VW Passat B1</name>
+		<type>kombi</type>
+		<ecapacity>1.6</ecapacity>
 	</car>
-	<car>
-		<price>32238</price>
-		<age>2</age>
-		<hp>95</hp>
-		<diesel>true</diesel>
-		<automatic>true</automatic>
-		<name>Marka Model15</name>
-		<type>Nadwozie1</type>
-		<ecapacity>2.3</ecapacity>
-	</car>
-
-
 </cars>
