@@ -1,78 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.HBox?>
-
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.cell.PropertyValueFactory?>
-<?import javafx.collections.FXCollections?>
-<?import pojo.Car?>
-<HBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx"
-      xmlns:fx="http://javafx.com/fxml" spacing="10">
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
 
-    <GridPane  hgap="10" vgap="10">
-        <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
-        <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Cena" />
-        <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="Wiek" />
-        <Label GridPane.columnIndex="0" GridPane.rowIndex="2" text="Moc" />
-        <Label GridPane.columnIndex="0" GridPane.rowIndex="3" text="Silnik" />
-        <Label GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="2" text="Skrzynia biegów" />
-        <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="2" fx:id="price">10000</TextField>
-        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.columnSpan="2" fx:id="age">10</TextField>
-        <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="hp">90</TextField>
-        <RadioButton GridPane.columnIndex="1" GridPane.rowIndex="4" mnemonicParsing="false" text="Benzynowy" fx:id="petrol"/>
-        <RadioButton GridPane.columnIndex="1" GridPane.rowIndex="5" mnemonicParsing="false" text="Diesel" fx:id="diesel"/>
-        <RadioButton GridPane.columnIndex="1" GridPane.rowIndex="7" mnemonicParsing="false" text="Automatyczna" fx:id="automatic"/>
-        <RadioButton GridPane.columnIndex="1" GridPane.rowIndex="8" mnemonicParsing="false" text="Manualna" fx:id="manual"/>
-        <Button GridPane.columnIndex="0" GridPane.rowIndex="9" GridPane.columnSpan="2" mnemonicParsing="false" text="Szukaj" fx:id="search" />
+<HBox prefHeight="400.0" spacing="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+
+    <GridPane hgap="10" vgap="10">
+        <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
+        <Label text="Cena" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Label text="Wiek" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label text="Moc" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Label text="Silnik" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Label text="Skrzynia biegów" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+        <Label text="Typ nadwozia" GridPane.columnSpan="2" GridPane.rowIndex="10" />
+        <TextField fx:id="price" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="0">10000</TextField>
+        <TextField fx:id="age" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">10</TextField>
+        <TextField fx:id="hp" GridPane.columnIndex="1" GridPane.rowIndex="2">90</TextField>
+        <RadioButton fx:id="petrol" mnemonicParsing="false" text="Benzynowy" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <RadioButton fx:id="diesel" mnemonicParsing="false" text="Diesel" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <RadioButton fx:id="automatic" mnemonicParsing="false" text="Automatyczna" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        <RadioButton fx:id="manual" mnemonicParsing="false" text="Manualna" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+        <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="11" fx:id="type" >
+            <!--<items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="2 minutes" />
+                    <String fx:value="5 minutes" />
+                    <String fx:value="15 minutes" />
+                </FXCollections>
+            </items>-->
+        </ChoiceBox>
+        <Button fx:id="search" mnemonicParsing="false" text="Szukaj" GridPane.columnSpan="2" GridPane.rowIndex="13" />
     </GridPane>
 
-    <TableView fx:id="tableView" GridPane.columnIndex="0"
-               GridPane.rowIndex="1">
+    <TableView fx:id="tableView" GridPane.columnIndex="0" GridPane.rowIndex="1">
         <columns>
-           <!-- "Price: "+price+", Age: "+age+", Hp: "+hp+", isAutomatic: "+isAutomatic+", isDiesel: "+isDiesel-->
-            <TableColumn fx:id="name_col" text="Nazwa" prefWidth="100">
+            <!-- "Price: "+price+", Age: "+age+", Hp: "+hp+", isAutomatic: "+isAutomatic+", isDiesel: "+isDiesel-->
+            <TableColumn fx:id="name_col" prefWidth="100" text="Nazwa">
                 <cellValueFactory>
                     <PropertyValueFactory property="name" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="type_col" text="Nadwozie" prefWidth="100">
+            <TableColumn fx:id="type_col" prefWidth="100" text="Nadwozie">
                 <cellValueFactory>
                     <PropertyValueFactory property="type" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="ecapacity_col" text="Poj. silnika" prefWidth="100">
+            <TableColumn fx:id="ecapacity_col" prefWidth="100" text="Poj. silnika">
                 <cellValueFactory>
                     <PropertyValueFactory property="ecapacity" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="price_col" text="Cena" prefWidth="100">
+            <TableColumn fx:id="price_col" prefWidth="100" text="Cena">
                 <cellValueFactory>
                     <PropertyValueFactory property="price" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn text="Rocznik" prefWidth="100">
+            <TableColumn prefWidth="100" text="Rocznik">
                 <cellValueFactory>
                     <PropertyValueFactory property="year" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn text="Moc" prefWidth="60">
+            <TableColumn prefWidth="60" text="Moc">
                 <cellValueFactory>
                     <PropertyValueFactory property="hp" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn text="Paliwo" prefWidth="150">
+            <TableColumn prefWidth="150" text="Paliwo">
                 <cellValueFactory>
                     <PropertyValueFactory property="engine" />
                 </cellValueFactory>
             </TableColumn>
-            <TableColumn text="Skrzynia biegów" prefWidth="150">
+            <TableColumn prefWidth="150" text="Skrzynia biegów">
                 <cellValueFactory>
                     <PropertyValueFactory property="transmission" />
                 </cellValueFactory>
