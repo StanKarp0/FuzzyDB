@@ -52,8 +52,8 @@ public class Dao {
 
         Variable age_adapt = new Variable("age_adapt", 0., 1.);
         age_adapt.addMFnc("low", FuzzyFnc.trapmf(-1, -0.5, 0.1, 0.35));
-        //age_adapt.addMFnc("medium", FuzzyFnc.trapmf(0.3, 0.5, 0.6, 0.7));
-        age_adapt.addMFnc("high", FuzzyFnc.trapmf(0.3, 0.40, 2, 3));
+        age_adapt.addMFnc("medium", FuzzyFnc.trapmf(0.3, 0.5, 0.6, 0.7));
+        age_adapt.addMFnc("high", FuzzyFnc.trapmf(0.5, 0.7, 2, 3));
 
         Variable hp_adapt = new Variable("hp_adapt", 0., 1.);
         hp_adapt.addMFnc("low", FuzzyFnc.trapmf(-1, -0.5, 0.3, 0.5));
