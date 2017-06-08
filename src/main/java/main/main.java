@@ -85,7 +85,7 @@ public class main extends Application {
             fxmlLoader.setController(this);
             Parent root = fxmlLoader.load();
 
-            stage.setScene(new Scene(root, 1000, 600));
+            stage.setScene(new Scene(root, 1120, 600));
 
             stage.show();
 
