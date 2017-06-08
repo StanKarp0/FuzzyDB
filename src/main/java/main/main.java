@@ -78,6 +78,8 @@ public class main extends Application {
             stage.show();
 
             loadControls();
+            loadTableView(new UserInput(10000, 10, 90, Engine.NONE, Transmission.NONE));
+            
         } catch (Exception e) {
             System.out.println("start" + e);
             e.printStackTrace();
@@ -129,20 +131,22 @@ public class main extends Application {
                 }
 
                 UserInput input = new UserInput(selectedPrice, selectedAge, selectedHp, engine, transmission);
-                List<Car> cars = dao.find(input);
-
-                List<CarView> carViewList = new ArrayList<>();
-                for(Car c: cars){
-                    carViewList.add(new CarView(c));
-                }
-
-
-
-                ObservableList<CarView> list = FXCollections.observableArrayList(carViewList);
-                tableView.setItems(list);
-
+                loadTableView(input);
             }
         });
+    }
+
+    private void loadTableView(UserInput input) {
+        List<Car> cars = dao.find(input);
+
+        List<CarView> carViewList = new ArrayList<>();
+        for(Car c: cars){
+            carViewList.add(new CarView(c));
+        }
+
+        ObservableList<CarView> list = FXCollections.observableArrayList(carViewList);
+        tableView.setItems(list);
+
     }
     
 }
