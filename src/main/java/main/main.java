@@ -122,19 +122,19 @@ public class main extends Application {
                 try {
                     selectedPrice = Integer.valueOf(price.getText());
                 }catch(NumberFormatException e){
-                    selectedPrice = -1;
+                    selectedPrice = -99999;
                 }
                 int selectedAge;
                 try {
                     selectedAge = Integer.valueOf(age.getText());
                 }catch(NumberFormatException e){
-                    selectedAge = -1;
+                    selectedAge = -99999;
                 }
                 int selectedHp;
                 try {
                     selectedHp = Integer.valueOf(hp.getText());
                 }catch(NumberFormatException e){
-                    selectedHp = -1;
+                    selectedHp = -99999;
                 }
 
                 UserInput input = new UserInput(selectedPrice, selectedAge, selectedHp, engine, transmission, type.getValue());
