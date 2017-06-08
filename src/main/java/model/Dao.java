@@ -103,11 +103,11 @@ public class Dao {
         }, (car, input) -> {
             double val = 0;
             if(input.isDieselSelected())
-                if(car.isDiesel() != input.isDiesel()) val -= 0.15;//do dostosowania pozniej, bo nie wiem jakie wyniki beda wychodzily
+                if(car.isDiesel() != input.isDiesel()) val -= 0.25;//do dostosowania pozniej, bo nie wiem jakie wyniki beda wychodzily
             if(input.isAutomaticSelected())
-                if(car.isAutomatic() != input.isAutomatic()) val -= 0.25;
+                if(car.isAutomatic() != input.isAutomatic()) val -= 0.35;
             if(input.isTypeSelected() && !(input.getType().equals(Car.ALL_TYPES)))
-                if(!car.getType().equals(input.getType())) val -=0.4;
+                if(!car.getType().equals(input.getType())) val -=0.5;
             return val;
         });
 
