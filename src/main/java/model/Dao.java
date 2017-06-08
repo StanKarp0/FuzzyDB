@@ -69,7 +69,9 @@ public class Dao {
         //high
         //attractFuzzy.addRule(price_adapt.eq("high").then("high"));
         attractFuzzy.addRule(price_adapt.eq("high").and(age_adapt.eq("high")).then("high"));
-        attractFuzzy.addRule(price_adapt.eq("high").and(hp_adapt.eq("high")).then("high"));
+        attractFuzzy.addRule(price_adapt.eq("high").and(hp_adapt.eq("high")).and(age_adapt.eq("medium")).then("high"));
+        attractFuzzy.addRule(price_adapt.eq("high").and(hp_adapt.eq("medium")).and(age_adapt.eq("high")).then("high"));
+        attractFuzzy.addRule(price_adapt.eq("medium").and(hp_adapt.eq("high")).and(age_adapt.eq("high")).then("high"));
 
         //medium
         attractFuzzy.addRule(price_adapt.eq("high").and(age_adapt.eq("low")).then("medium"));
