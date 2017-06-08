@@ -130,7 +130,6 @@ public class main extends Application {
 
                 UserInput input = new UserInput(selectedPrice, selectedAge, selectedHp, engine, transmission);
                 List<Car> cars = dao.find(input);
-                cars.forEach(System.out::println);
 
                 List<CarView> carViewList = new ArrayList<>();
                 for(Car c: cars){

@@ -51,7 +51,7 @@ public class Model<T, U> {
                 return t;
             }
             double getD() {
-                return d;
+                return 1-d;
             }
         }
 
@@ -63,7 +63,6 @@ public class Model<T, U> {
         for(Pair p: pairs)
             result.add(p.getT());
         return result;
-//        models.sort(Comparator.comparingDouble(model -> model.getResult(userInput)));
     }
 
 
