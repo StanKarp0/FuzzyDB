@@ -88,7 +88,7 @@ public class Dao {
 
             result.put("price_adapt", muPriceAdapt(userInput.getPrice(), car.getPrice()));
             result.put("age_adapt", muAgeAdapt(userInput.getAge(), car.getAge()));
-            result.put("age_adapt", muHpAdapt(userInput.getHp(), car.getHp()));
+            result.put("hp_adapt", muHpAdapt(userInput.getHp(), car.getHp()));
 
             return result;
         }, (car, input) -> {
